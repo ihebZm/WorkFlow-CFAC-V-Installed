@@ -1,0 +1,8 @@
+2023-11-23 10:45:04 | Info    | 1     | iTop is configured to use the <b>SMTP</b> transport. | SetupLog |||
+2023-11-23 10:45:04 | Info    | 1     | SMTP configuration (from config-itop.php): host: smtp.gmail.com, port: 587, user: iheb@cfac.com.tn, password: ****************, encryption: tls. | SetupLog |||
+2023-11-23 10:45:04 | Ok      | 1     | PHP settings are ok to proceed with a test of the email | SetupLog |||
+2023-11-23 10:45:16 | Ok      | 1     | The email has been sent, check your inbox for the incoming mail... | SetupLog |||
+2023-11-28 18:05:36 | Info    | 1     | iTop is configured to use the <b>SMTP</b> transport. | SetupLog |||
+2023-11-28 18:05:36 | Info    | 1     | SMTP configuration (from config-itop.php): host: 10.0.1.165, port: 587, user: iheb@cfac.com.tn, password: ****************, encryption: ssl. | SetupLog |||
+2023-11-28 18:05:36 | Ok      | 1     | PHP settings are ok to proceed with a test of the email | SetupLog |||
+2023-11-28 18:05:41 | Error   | 1     | Error: 'Connection could not be established with host 10.0.1.165 :stream_socket_client(): unable to connect to ssl://10.0.1.165:587 (Connection refused)' | SetupLog |||

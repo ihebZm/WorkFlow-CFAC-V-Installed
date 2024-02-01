@@ -1,0 +1,1062 @@
+2023-06-01 15:14:52 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-13 14:00:22 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-13 14:22:26 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-13 14:23:02 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-13 14:26:15 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-13 14:27:12 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-13 14:33:04 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-13 14:33:08 | Error   | 14    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-13 14:33:36 | Error   | 14    | Erreur: No result for the single row query: 'SELECT
+ DISTINCT `UserLocal`.`id` AS `UserLocalid`,
+ `UserLocal_User`.`contactid` AS `UserLocalcontactid`,
+ `Person_contactid_Contact`.`name` AS `UserLocallast_name`,
+ `Person_contactid`.`first_name` AS `UserLocalfirst_name`,
+ `Person_contactid_Contact`.`email` AS `UserLocalemail`,
+ `Person_contactid_Contact`.`org_id` AS `UserLocalorg_id`,
+ `UserLocal_User`.`login` AS `UserLocallogin`,
+ `UserLocal_User`.`language` AS `UserLocallanguage`,
+ `UserLocal_User`.`status` AS `UserLocalstatus`,
+ `UserLocal_UserInternal`.`reset_pwd_token_hash` AS `UserLocalreset_pwd_token`,
+ `UserLocal`.`password_hash` AS `UserLocalpassword`,
+ `UserLocal`.`expiration` AS `UserLocalexpiration`,
+ `UserLocal`.`password_renewed_date` AS `UserLocalpassword_renewed_date`,
+ `UserLocal_User`.`finalclass` AS `UserLocalfinalclass`,
+ CAST(CONCAT(COALESCE(`UserLocal_User`.`login`, '')) AS CHAR) AS `UserLocalfriendlyname`,
+ CAST(CONCAT(COALESCE(`Person_contactid`.`first_name`, ''), COALESCE(' ', ''), COALESCE(`Person_contactid_Contact`.`name`, '')) AS CHAR) AS `UserLocalcontactid_friendlyname`,
+ COALESCE((`Person_contactid_Contact`.`status` = 'inactive'), 0) AS `UserLocalcontactid_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Organization_org_id`.`name`, '')) AS CHAR) AS `UserLocalorg_id_friendlyname`,
+ COALESCE((`Organization_org_id`.`status` = 'inactive'), 0) AS `UserLocalorg_id_obsolescence_flag`,
+ `UserLocal`.`password_salt` AS `UserLocalpassword_salt`,
+ `UserLocal_UserInternal`.`reset_pwd_token_salt` AS `UserLocalreset_pwd_token_salt`
+ FROM 
+   `priv_user_local` AS `UserLocal`
+   INNER JOIN 
+      `priv_internaluser` AS `UserLocal_UserInternal`
+    ON `UserLocal`.`id` = `UserLocal_UserInternal`.`id`
+   INNER JOIN (
+      `priv_user` AS `UserLocal_User` 
+      LEFT JOIN (
+         `person` AS `Person_contactid` 
+         INNER JOIN (
+            `contact` AS `Person_contactid_Contact` 
+            INNER JOIN 
+               `organization` AS `Organization_org_id`
+             ON `Person_contactid_Contact`.`org_id` = `Organization_org_id`.`id`
+         ) ON `Person_contactid`.`id` = `Person_contactid_Contact`.`id`
+      ) ON `UserLocal_User`.`contactid` = `Person_contactid`.`id`
+   ) ON `UserLocal`.`id` = `UserLocal_User`.`id`
+ WHERE (`UserLocal`.`id` = '4')
+  '. | IssueLog |||
+2023-06-13 17:10:04 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-13 17:27:03 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-13 17:46:18 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-13 17:46:57 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-13 17:46:58 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 11:55:34 | Error   | 1     | Error: No result for the single row query: 'SELECT
+ DISTINCT `UserRequest`.`id` AS `UserRequestid`,
+ `UserRequest_Ticket`.`operational_status` AS `UserRequestoperational_status`,
+ `UserRequest_Ticket`.`ref` AS `UserRequestref`,
+ `UserRequest_Ticket`.`org_id` AS `UserRequestorg_id`,
+ `Organization_org_id`.`name` AS `UserRequestorg_name`,
+ `UserRequest_Ticket`.`caller_id` AS `UserRequestcaller_id`,
+ `Person_caller_id_Contact`.`name` AS `UserRequestcaller_name`,
+ `UserRequest_Ticket`.`team_id` AS `UserRequestteam_id`,
+ `Team_team_id_Contact`.`email` AS `UserRequestteam_name`,
+ `UserRequest_Ticket`.`agent_id` AS `UserRequestagent_id`,
+ `Person_agent_id_Contact`.`name` AS `UserRequestagent_name`,
+ `UserRequest_Ticket`.`title` AS `UserRequesttitle`,
+ `UserRequest_Ticket`.`description` AS `UserRequestdescription`,
+ `UserRequest_Ticket`.`start_date` AS `UserRequeststart_date`,
+ `UserRequest_Ticket`.`end_date` AS `UserRequestend_date`,
+ `UserRequest_Ticket`.`last_update` AS `UserRequestlast_update`,
+ `UserRequest_Ticket`.`close_date` AS `UserRequestclose_date`,
+ `UserRequest_Ticket`.`private_log` AS `UserRequestprivate_log`,
+ `UserRequest`.`status` AS `UserRequeststatus`,
+ `UserRequest`.`request_type` AS `UserRequestrequest_type`,
+ `UserRequest`.`impact` AS `UserRequestimpact`,
+ `UserRequest`.`priority` AS `UserRequestpriority`,
+ `UserRequest`.`urgency` AS `UserRequesturgency`,
+ `UserRequest`.`origin` AS `UserRequestorigin`,
+ `UserRequest`.`service_id` AS `UserRequestservice_id`,
+ `Service_service_id`.`name` AS `UserRequestservice_name`,
+ `UserRequest`.`servicesubcategory_id` AS `UserRequestservicesubcategory_id`,
+ `ServiceSubcategory_servicesubcategory_id`.`name` AS `UserRequestservicesubcategory_name`,
+ `UserRequest`.`escalation_flag` AS `UserRequestescalation_flag`,
+ `UserRequest`.`escalation_reason` AS `UserRequestescalation_reason`,
+ `UserRequest`.`assignment_date` AS `UserRequestassignment_date`,
+ `UserRequest`.`resolution_date` AS `UserRequestresolution_date`,
+ `UserRequest`.`last_pending_date` AS `UserRequestlast_pending_date`,
+ `UserRequest`.`cumulatedpending_timespent` AS `UserRequestcumulatedpending`,
+ `UserRequest`.`tto_timespent` AS `UserRequesttto`,
+ `UserRequest`.`ttr_timespent` AS `UserRequestttr`,
+ `UserRequest`.`tto_100_deadline` AS `UserRequesttto_escalation_deadline`,
+ `UserRequest`.`tto_100_passed` AS `UserRequestsla_tto_passed`,
+ `UserRequest`.`tto_100_overrun` AS `UserRequestsla_tto_over`,
+ `UserRequest`.`ttr_100_deadline` AS `UserRequestttr_escalation_deadline`,
+ `UserRequest`.`ttr_100_passed` AS `UserRequestsla_ttr_passed`,
+ `UserRequest`.`ttr_100_overrun` AS `UserRequestsla_ttr_over`,
+ `UserRequest`.`time_spent` AS `UserRequesttime_spent`,
+ `UserRequest`.`resolution_code` AS `UserRequestresolution_code`,
+ `UserRequest`.`solution` AS `UserRequestsolution`,
+ `UserRequest`.`pending_reason` AS `UserRequestpending_reason`,
+ `UserRequest`.`parent_request_id` AS `UserRequestparent_request_id`,
+ `UserRequest_parent_request_id_Ticket`.`ref` AS `UserRequestparent_request_ref`,
+ `UserRequest`.`parent_incident_id` AS `UserRequestparent_incident_id`,
+ `Incident_parent_incident_id_Ticket`.`ref` AS `UserRequestparent_incident_ref`,
+ `UserRequest`.`parent_problem_id` AS `UserRequestparent_problem_id`,
+ `Problem_parent_problem_id_Ticket`.`ref` AS `UserRequestparent_problem_ref`,
+ `UserRequest`.`parent_change_id` AS `UserRequestparent_change_id`,
+ `Change_parent_change_id_Ticket`.`ref` AS `UserRequestparent_change_ref`,
+ `UserRequest`.`public_log` AS `UserRequestpublic_log`,
+ `UserRequest`.`user_satisfaction` AS `UserRequestuser_satisfaction`,
+ `UserRequest`.`user_commment` AS `UserRequestuser_comment`,
+ `UserRequest_Ticket`.`finalclass` AS `UserRequestfinalclass`,
+ CAST(CONCAT(COALESCE(`UserRequest_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestfriendlyname`,
+ CAST(CONCAT(COALESCE(`Organization_org_id`.`name`, '')) AS CHAR) AS `UserRequestorg_id_friendlyname`,
+ COALESCE((`Organization_org_id`.`status` = 'inactive'), 0) AS `UserRequestorg_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Person_caller_id`.`first_name`, ''), COALESCE(' ', ''), COALESCE(`Person_caller_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestcaller_id_friendlyname`,
+ COALESCE((`Person_caller_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestcaller_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Team_team_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestteam_id_friendlyname`,
+ COALESCE((`Team_team_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestteam_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Person_agent_id`.`first_name`, ''), COALESCE(' ', ''), COALESCE(`Person_agent_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestagent_id_friendlyname`,
+ COALESCE((`Person_agent_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestagent_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Service_service_id`.`name`, '')) AS CHAR) AS `UserRequestservice_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`ServiceSubcategory_servicesubcategory_id`.`name`, '')) AS CHAR) AS `UserRequestservicesubcategory_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`UserRequest_parent_request_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_request_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Incident_parent_incident_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_incident_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Problem_parent_problem_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_problem_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Change_parent_change_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_change_id_friendlyname`,
+ `Change_parent_change_id_Ticket`.`finalclass` AS `UserRequestparent_change_id_finalclass_recall`,
+ `UserRequest`.`cumulatedpending_started` AS `UserRequestcumulatedpending_started`,
+ `UserRequest`.`cumulatedpending_laststart` AS `UserRequestcumulatedpending_laststart`,
+ `UserRequest`.`cumulatedpending_stopped` AS `UserRequestcumulatedpending_stopped`,
+ `UserRequest`.`tto_started` AS `UserRequesttto_started`,
+ `UserRequest`.`tto_laststart` AS `UserRequesttto_laststart`,
+ `UserRequest`.`tto_stopped` AS `UserRequesttto_stopped`,
+ `UserRequest`.`tto_75_deadline` AS `UserRequesttto_75_deadline`,
+ `UserRequest`.`tto_75_passed` AS `UserRequesttto_75_passed`,
+ `UserRequest`.`tto_75_triggered` AS `UserRequesttto_75_triggered`,
+ `UserRequest`.`tto_75_overrun` AS `UserRequesttto_75_overrun`,
+ `UserRequest`.`tto_100_deadline` AS `UserRequesttto_100_deadline`,
+ `UserRequest`.`tto_100_passed` AS `UserRequesttto_100_passed`,
+ `UserRequest`.`tto_100_triggered` AS `UserRequesttto_100_triggered`,
+ `UserRequest`.`tto_100_overrun` AS `UserRequesttto_100_overrun`,
+ `UserRequest`.`ttr_started` AS `UserRequestttr_started`,
+ `UserRequest`.`ttr_laststart` AS `UserRequestttr_laststart`,
+ `UserRequest`.`ttr_stopped` AS `UserRequestttr_stopped`,
+ `UserRequest`.`ttr_75_deadline` AS `UserRequestttr_75_deadline`,
+ `UserRequest`.`ttr_75_passed` AS `UserRequestttr_75_passed`,
+ `UserRequest`.`ttr_75_triggered` AS `UserRequestttr_75_triggered`,
+ `UserRequest`.`ttr_75_overrun` AS `UserRequestttr_75_overrun`,
+ `UserRequest`.`ttr_100_deadline` AS `UserRequestttr_100_deadline`,
+ `UserRequest`.`ttr_100_passed` AS `UserRequestttr_100_passed`,
+ `UserRequest`.`ttr_100_triggered` AS `UserRequestttr_100_triggered`,
+ `UserRequest`.`ttr_100_overrun` AS `UserRequestttr_100_overrun`,
+ `UserRequest`.`public_log_index` AS `UserRequestpublic_log_index`,
+ `UserRequest_Ticket`.`description_format` AS `UserRequestdescription_format`,
+ `UserRequest_Ticket`.`private_log_index` AS `UserRequestprivate_log_index`
+ FROM 
+   `ticket_request` AS `UserRequest`
+   LEFT JOIN 
+      `service` AS `Service_service_id`
+    ON `UserRequest`.`service_id` = `Service_service_id`.`id`
+   LEFT JOIN 
+      `servicesubcategory` AS `ServiceSubcategory_servicesubcategory_id`
+    ON `UserRequest`.`servicesubcategory_id` = `ServiceSubcategory_servicesubcategory_id`.`id`
+   LEFT JOIN 
+      `ticket` AS `UserRequest_parent_request_id_Ticket`
+    ON `UserRequest`.`parent_request_id` = `UserRequest_parent_request_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Incident_parent_incident_id_Ticket`
+    ON `UserRequest`.`parent_incident_id` = `Incident_parent_incident_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Problem_parent_problem_id_Ticket`
+    ON `UserRequest`.`parent_problem_id` = `Problem_parent_problem_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Change_parent_change_id_Ticket`
+    ON `UserRequest`.`parent_change_id` = `Change_parent_change_id_Ticket`.`id`
+   INNER JOIN (
+      `ticket` AS `UserRequest_Ticket` 
+      INNER JOIN 
+         `organization` AS `Organization_org_id`
+       ON `UserRequest_Ticket`.`org_id` = `Organization_org_id`.`id`
+      LEFT JOIN (
+         `person` AS `Person_caller_id` 
+         INNER JOIN 
+            `contact` AS `Person_caller_id_Contact`
+          ON `Person_caller_id`.`id` = `Person_caller_id_Contact`.`id`
+      ) ON `UserRequest_Ticket`.`caller_id` = `Person_caller_id`.`id`
+      LEFT JOIN 
+         `contact` AS `Team_team_id_Contact`
+       ON `UserRequest_Ticket`.`team_id` = `Team_team_id_Contact`.`id`
+      LEFT JOIN (
+         `person` AS `Person_agent_id` 
+         INNER JOIN 
+            `contact` AS `Person_agent_id_Contact`
+          ON `Person_agent_id`.`id` = `Person_agent_id_Contact`.`id`
+      ) ON `UserRequest_Ticket`.`agent_id` = `Person_agent_id`.`id`
+   ) ON `UserRequest`.`id` = `UserRequest_Ticket`.`id`
+ WHERE ((((((`UserRequest`.`id` = '14382') AND COALESCE((`Team_team_id_Contact`.`finalclass` IN ('Team')), 1)) AND COALESCE((`UserRequest_parent_request_id_Ticket`.`finalclass` IN ('UserRequest')), 1)) AND COALESCE((`Incident_parent_incident_id_Ticket`.`finalclass` IN ('Incident')), 1)) AND COALESCE((`Problem_parent_problem_id_Ticket`.`finalclass` IN ('Problem')), 1)) AND COALESCE((`Change_parent_change_id_Ticket`.`finalclass` IN ('RoutineChange', 'ApprovedChange', 'NormalChange', 'EmergencyChange', 'Change')), 1))
+  '. | IssueLog |||
+2023-06-14 11:57:27 | Error   | 1     | Error: No result for the single row query: 'SELECT
+ DISTINCT `UserRequest`.`id` AS `UserRequestid`,
+ `UserRequest_Ticket`.`operational_status` AS `UserRequestoperational_status`,
+ `UserRequest_Ticket`.`ref` AS `UserRequestref`,
+ `UserRequest_Ticket`.`org_id` AS `UserRequestorg_id`,
+ `Organization_org_id`.`name` AS `UserRequestorg_name`,
+ `UserRequest_Ticket`.`caller_id` AS `UserRequestcaller_id`,
+ `Person_caller_id_Contact`.`name` AS `UserRequestcaller_name`,
+ `UserRequest_Ticket`.`team_id` AS `UserRequestteam_id`,
+ `Team_team_id_Contact`.`email` AS `UserRequestteam_name`,
+ `UserRequest_Ticket`.`agent_id` AS `UserRequestagent_id`,
+ `Person_agent_id_Contact`.`name` AS `UserRequestagent_name`,
+ `UserRequest_Ticket`.`title` AS `UserRequesttitle`,
+ `UserRequest_Ticket`.`description` AS `UserRequestdescription`,
+ `UserRequest_Ticket`.`start_date` AS `UserRequeststart_date`,
+ `UserRequest_Ticket`.`end_date` AS `UserRequestend_date`,
+ `UserRequest_Ticket`.`last_update` AS `UserRequestlast_update`,
+ `UserRequest_Ticket`.`close_date` AS `UserRequestclose_date`,
+ `UserRequest_Ticket`.`private_log` AS `UserRequestprivate_log`,
+ `UserRequest`.`status` AS `UserRequeststatus`,
+ `UserRequest`.`request_type` AS `UserRequestrequest_type`,
+ `UserRequest`.`impact` AS `UserRequestimpact`,
+ `UserRequest`.`priority` AS `UserRequestpriority`,
+ `UserRequest`.`urgency` AS `UserRequesturgency`,
+ `UserRequest`.`origin` AS `UserRequestorigin`,
+ `UserRequest`.`service_id` AS `UserRequestservice_id`,
+ `Service_service_id`.`name` AS `UserRequestservice_name`,
+ `UserRequest`.`servicesubcategory_id` AS `UserRequestservicesubcategory_id`,
+ `ServiceSubcategory_servicesubcategory_id`.`name` AS `UserRequestservicesubcategory_name`,
+ `UserRequest`.`escalation_flag` AS `UserRequestescalation_flag`,
+ `UserRequest`.`escalation_reason` AS `UserRequestescalation_reason`,
+ `UserRequest`.`assignment_date` AS `UserRequestassignment_date`,
+ `UserRequest`.`resolution_date` AS `UserRequestresolution_date`,
+ `UserRequest`.`last_pending_date` AS `UserRequestlast_pending_date`,
+ `UserRequest`.`cumulatedpending_timespent` AS `UserRequestcumulatedpending`,
+ `UserRequest`.`tto_timespent` AS `UserRequesttto`,
+ `UserRequest`.`ttr_timespent` AS `UserRequestttr`,
+ `UserRequest`.`tto_100_deadline` AS `UserRequesttto_escalation_deadline`,
+ `UserRequest`.`tto_100_passed` AS `UserRequestsla_tto_passed`,
+ `UserRequest`.`tto_100_overrun` AS `UserRequestsla_tto_over`,
+ `UserRequest`.`ttr_100_deadline` AS `UserRequestttr_escalation_deadline`,
+ `UserRequest`.`ttr_100_passed` AS `UserRequestsla_ttr_passed`,
+ `UserRequest`.`ttr_100_overrun` AS `UserRequestsla_ttr_over`,
+ `UserRequest`.`time_spent` AS `UserRequesttime_spent`,
+ `UserRequest`.`resolution_code` AS `UserRequestresolution_code`,
+ `UserRequest`.`solution` AS `UserRequestsolution`,
+ `UserRequest`.`pending_reason` AS `UserRequestpending_reason`,
+ `UserRequest`.`parent_request_id` AS `UserRequestparent_request_id`,
+ `UserRequest_parent_request_id_Ticket`.`ref` AS `UserRequestparent_request_ref`,
+ `UserRequest`.`parent_incident_id` AS `UserRequestparent_incident_id`,
+ `Incident_parent_incident_id_Ticket`.`ref` AS `UserRequestparent_incident_ref`,
+ `UserRequest`.`parent_problem_id` AS `UserRequestparent_problem_id`,
+ `Problem_parent_problem_id_Ticket`.`ref` AS `UserRequestparent_problem_ref`,
+ `UserRequest`.`parent_change_id` AS `UserRequestparent_change_id`,
+ `Change_parent_change_id_Ticket`.`ref` AS `UserRequestparent_change_ref`,
+ `UserRequest`.`public_log` AS `UserRequestpublic_log`,
+ `UserRequest`.`user_satisfaction` AS `UserRequestuser_satisfaction`,
+ `UserRequest`.`user_commment` AS `UserRequestuser_comment`,
+ `UserRequest_Ticket`.`finalclass` AS `UserRequestfinalclass`,
+ CAST(CONCAT(COALESCE(`UserRequest_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestfriendlyname`,
+ CAST(CONCAT(COALESCE(`Organization_org_id`.`name`, '')) AS CHAR) AS `UserRequestorg_id_friendlyname`,
+ COALESCE((`Organization_org_id`.`status` = 'inactive'), 0) AS `UserRequestorg_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Person_caller_id`.`first_name`, ''), COALESCE(' ', ''), COALESCE(`Person_caller_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestcaller_id_friendlyname`,
+ COALESCE((`Person_caller_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestcaller_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Team_team_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestteam_id_friendlyname`,
+ COALESCE((`Team_team_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestteam_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Person_agent_id`.`first_name`, ''), COALESCE(' ', ''), COALESCE(`Person_agent_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestagent_id_friendlyname`,
+ COALESCE((`Person_agent_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestagent_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Service_service_id`.`name`, '')) AS CHAR) AS `UserRequestservice_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`ServiceSubcategory_servicesubcategory_id`.`name`, '')) AS CHAR) AS `UserRequestservicesubcategory_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`UserRequest_parent_request_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_request_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Incident_parent_incident_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_incident_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Problem_parent_problem_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_problem_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Change_parent_change_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_change_id_friendlyname`,
+ `Change_parent_change_id_Ticket`.`finalclass` AS `UserRequestparent_change_id_finalclass_recall`,
+ `UserRequest`.`cumulatedpending_started` AS `UserRequestcumulatedpending_started`,
+ `UserRequest`.`cumulatedpending_laststart` AS `UserRequestcumulatedpending_laststart`,
+ `UserRequest`.`cumulatedpending_stopped` AS `UserRequestcumulatedpending_stopped`,
+ `UserRequest`.`tto_started` AS `UserRequesttto_started`,
+ `UserRequest`.`tto_laststart` AS `UserRequesttto_laststart`,
+ `UserRequest`.`tto_stopped` AS `UserRequesttto_stopped`,
+ `UserRequest`.`tto_75_deadline` AS `UserRequesttto_75_deadline`,
+ `UserRequest`.`tto_75_passed` AS `UserRequesttto_75_passed`,
+ `UserRequest`.`tto_75_triggered` AS `UserRequesttto_75_triggered`,
+ `UserRequest`.`tto_75_overrun` AS `UserRequesttto_75_overrun`,
+ `UserRequest`.`tto_100_deadline` AS `UserRequesttto_100_deadline`,
+ `UserRequest`.`tto_100_passed` AS `UserRequesttto_100_passed`,
+ `UserRequest`.`tto_100_triggered` AS `UserRequesttto_100_triggered`,
+ `UserRequest`.`tto_100_overrun` AS `UserRequesttto_100_overrun`,
+ `UserRequest`.`ttr_started` AS `UserRequestttr_started`,
+ `UserRequest`.`ttr_laststart` AS `UserRequestttr_laststart`,
+ `UserRequest`.`ttr_stopped` AS `UserRequestttr_stopped`,
+ `UserRequest`.`ttr_75_deadline` AS `UserRequestttr_75_deadline`,
+ `UserRequest`.`ttr_75_passed` AS `UserRequestttr_75_passed`,
+ `UserRequest`.`ttr_75_triggered` AS `UserRequestttr_75_triggered`,
+ `UserRequest`.`ttr_75_overrun` AS `UserRequestttr_75_overrun`,
+ `UserRequest`.`ttr_100_deadline` AS `UserRequestttr_100_deadline`,
+ `UserRequest`.`ttr_100_passed` AS `UserRequestttr_100_passed`,
+ `UserRequest`.`ttr_100_triggered` AS `UserRequestttr_100_triggered`,
+ `UserRequest`.`ttr_100_overrun` AS `UserRequestttr_100_overrun`,
+ `UserRequest`.`public_log_index` AS `UserRequestpublic_log_index`,
+ `UserRequest_Ticket`.`description_format` AS `UserRequestdescription_format`,
+ `UserRequest_Ticket`.`private_log_index` AS `UserRequestprivate_log_index`
+ FROM 
+   `ticket_request` AS `UserRequest`
+   LEFT JOIN 
+      `service` AS `Service_service_id`
+    ON `UserRequest`.`service_id` = `Service_service_id`.`id`
+   LEFT JOIN 
+      `servicesubcategory` AS `ServiceSubcategory_servicesubcategory_id`
+    ON `UserRequest`.`servicesubcategory_id` = `ServiceSubcategory_servicesubcategory_id`.`id`
+   LEFT JOIN 
+      `ticket` AS `UserRequest_parent_request_id_Ticket`
+    ON `UserRequest`.`parent_request_id` = `UserRequest_parent_request_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Incident_parent_incident_id_Ticket`
+    ON `UserRequest`.`parent_incident_id` = `Incident_parent_incident_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Problem_parent_problem_id_Ticket`
+    ON `UserRequest`.`parent_problem_id` = `Problem_parent_problem_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Change_parent_change_id_Ticket`
+    ON `UserRequest`.`parent_change_id` = `Change_parent_change_id_Ticket`.`id`
+   INNER JOIN (
+      `ticket` AS `UserRequest_Ticket` 
+      INNER JOIN 
+         `organization` AS `Organization_org_id`
+       ON `UserRequest_Ticket`.`org_id` = `Organization_org_id`.`id`
+      LEFT JOIN (
+         `person` AS `Person_caller_id` 
+         INNER JOIN 
+            `contact` AS `Person_caller_id_Contact`
+          ON `Person_caller_id`.`id` = `Person_caller_id_Contact`.`id`
+      ) ON `UserRequest_Ticket`.`caller_id` = `Person_caller_id`.`id`
+      LEFT JOIN 
+         `contact` AS `Team_team_id_Contact`
+       ON `UserRequest_Ticket`.`team_id` = `Team_team_id_Contact`.`id`
+      LEFT JOIN (
+         `person` AS `Person_agent_id` 
+         INNER JOIN 
+            `contact` AS `Person_agent_id_Contact`
+          ON `Person_agent_id`.`id` = `Person_agent_id_Contact`.`id`
+      ) ON `UserRequest_Ticket`.`agent_id` = `Person_agent_id`.`id`
+   ) ON `UserRequest`.`id` = `UserRequest_Ticket`.`id`
+ WHERE ((((((`UserRequest`.`id` = '14382') AND COALESCE((`Team_team_id_Contact`.`finalclass` IN ('Team')), 1)) AND COALESCE((`UserRequest_parent_request_id_Ticket`.`finalclass` IN ('UserRequest')), 1)) AND COALESCE((`Incident_parent_incident_id_Ticket`.`finalclass` IN ('Incident')), 1)) AND COALESCE((`Problem_parent_problem_id_Ticket`.`finalclass` IN ('Problem')), 1)) AND COALESCE((`Change_parent_change_id_Ticket`.`finalclass` IN ('RoutineChange', 'ApprovedChange', 'NormalChange', 'EmergencyChange', 'Change')), 1))
+  '. | IssueLog |||
+2023-06-14 11:58:20 | Error   | 1     | Error: No result for the single row query: 'SELECT
+ DISTINCT `UserRequest`.`id` AS `UserRequestid`,
+ `UserRequest_Ticket`.`operational_status` AS `UserRequestoperational_status`,
+ `UserRequest_Ticket`.`ref` AS `UserRequestref`,
+ `UserRequest_Ticket`.`org_id` AS `UserRequestorg_id`,
+ `Organization_org_id`.`name` AS `UserRequestorg_name`,
+ `UserRequest_Ticket`.`caller_id` AS `UserRequestcaller_id`,
+ `Person_caller_id_Contact`.`name` AS `UserRequestcaller_name`,
+ `UserRequest_Ticket`.`team_id` AS `UserRequestteam_id`,
+ `Team_team_id_Contact`.`email` AS `UserRequestteam_name`,
+ `UserRequest_Ticket`.`agent_id` AS `UserRequestagent_id`,
+ `Person_agent_id_Contact`.`name` AS `UserRequestagent_name`,
+ `UserRequest_Ticket`.`title` AS `UserRequesttitle`,
+ `UserRequest_Ticket`.`description` AS `UserRequestdescription`,
+ `UserRequest_Ticket`.`start_date` AS `UserRequeststart_date`,
+ `UserRequest_Ticket`.`end_date` AS `UserRequestend_date`,
+ `UserRequest_Ticket`.`last_update` AS `UserRequestlast_update`,
+ `UserRequest_Ticket`.`close_date` AS `UserRequestclose_date`,
+ `UserRequest_Ticket`.`private_log` AS `UserRequestprivate_log`,
+ `UserRequest`.`status` AS `UserRequeststatus`,
+ `UserRequest`.`request_type` AS `UserRequestrequest_type`,
+ `UserRequest`.`impact` AS `UserRequestimpact`,
+ `UserRequest`.`priority` AS `UserRequestpriority`,
+ `UserRequest`.`urgency` AS `UserRequesturgency`,
+ `UserRequest`.`origin` AS `UserRequestorigin`,
+ `UserRequest`.`service_id` AS `UserRequestservice_id`,
+ `Service_service_id`.`name` AS `UserRequestservice_name`,
+ `UserRequest`.`servicesubcategory_id` AS `UserRequestservicesubcategory_id`,
+ `ServiceSubcategory_servicesubcategory_id`.`name` AS `UserRequestservicesubcategory_name`,
+ `UserRequest`.`escalation_flag` AS `UserRequestescalation_flag`,
+ `UserRequest`.`escalation_reason` AS `UserRequestescalation_reason`,
+ `UserRequest`.`assignment_date` AS `UserRequestassignment_date`,
+ `UserRequest`.`resolution_date` AS `UserRequestresolution_date`,
+ `UserRequest`.`last_pending_date` AS `UserRequestlast_pending_date`,
+ `UserRequest`.`cumulatedpending_timespent` AS `UserRequestcumulatedpending`,
+ `UserRequest`.`tto_timespent` AS `UserRequesttto`,
+ `UserRequest`.`ttr_timespent` AS `UserRequestttr`,
+ `UserRequest`.`tto_100_deadline` AS `UserRequesttto_escalation_deadline`,
+ `UserRequest`.`tto_100_passed` AS `UserRequestsla_tto_passed`,
+ `UserRequest`.`tto_100_overrun` AS `UserRequestsla_tto_over`,
+ `UserRequest`.`ttr_100_deadline` AS `UserRequestttr_escalation_deadline`,
+ `UserRequest`.`ttr_100_passed` AS `UserRequestsla_ttr_passed`,
+ `UserRequest`.`ttr_100_overrun` AS `UserRequestsla_ttr_over`,
+ `UserRequest`.`time_spent` AS `UserRequesttime_spent`,
+ `UserRequest`.`resolution_code` AS `UserRequestresolution_code`,
+ `UserRequest`.`solution` AS `UserRequestsolution`,
+ `UserRequest`.`pending_reason` AS `UserRequestpending_reason`,
+ `UserRequest`.`parent_request_id` AS `UserRequestparent_request_id`,
+ `UserRequest_parent_request_id_Ticket`.`ref` AS `UserRequestparent_request_ref`,
+ `UserRequest`.`parent_incident_id` AS `UserRequestparent_incident_id`,
+ `Incident_parent_incident_id_Ticket`.`ref` AS `UserRequestparent_incident_ref`,
+ `UserRequest`.`parent_problem_id` AS `UserRequestparent_problem_id`,
+ `Problem_parent_problem_id_Ticket`.`ref` AS `UserRequestparent_problem_ref`,
+ `UserRequest`.`parent_change_id` AS `UserRequestparent_change_id`,
+ `Change_parent_change_id_Ticket`.`ref` AS `UserRequestparent_change_ref`,
+ `UserRequest`.`public_log` AS `UserRequestpublic_log`,
+ `UserRequest`.`user_satisfaction` AS `UserRequestuser_satisfaction`,
+ `UserRequest`.`user_commment` AS `UserRequestuser_comment`,
+ `UserRequest_Ticket`.`finalclass` AS `UserRequestfinalclass`,
+ CAST(CONCAT(COALESCE(`UserRequest_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestfriendlyname`,
+ CAST(CONCAT(COALESCE(`Organization_org_id`.`name`, '')) AS CHAR) AS `UserRequestorg_id_friendlyname`,
+ COALESCE((`Organization_org_id`.`status` = 'inactive'), 0) AS `UserRequestorg_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Person_caller_id`.`first_name`, ''), COALESCE(' ', ''), COALESCE(`Person_caller_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestcaller_id_friendlyname`,
+ COALESCE((`Person_caller_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestcaller_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Team_team_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestteam_id_friendlyname`,
+ COALESCE((`Team_team_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestteam_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Person_agent_id`.`first_name`, ''), COALESCE(' ', ''), COALESCE(`Person_agent_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestagent_id_friendlyname`,
+ COALESCE((`Person_agent_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestagent_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Service_service_id`.`name`, '')) AS CHAR) AS `UserRequestservice_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`ServiceSubcategory_servicesubcategory_id`.`name`, '')) AS CHAR) AS `UserRequestservicesubcategory_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`UserRequest_parent_request_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_request_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Incident_parent_incident_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_incident_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Problem_parent_problem_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_problem_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Change_parent_change_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_change_id_friendlyname`,
+ `Change_parent_change_id_Ticket`.`finalclass` AS `UserRequestparent_change_id_finalclass_recall`,
+ `UserRequest`.`cumulatedpending_started` AS `UserRequestcumulatedpending_started`,
+ `UserRequest`.`cumulatedpending_laststart` AS `UserRequestcumulatedpending_laststart`,
+ `UserRequest`.`cumulatedpending_stopped` AS `UserRequestcumulatedpending_stopped`,
+ `UserRequest`.`tto_started` AS `UserRequesttto_started`,
+ `UserRequest`.`tto_laststart` AS `UserRequesttto_laststart`,
+ `UserRequest`.`tto_stopped` AS `UserRequesttto_stopped`,
+ `UserRequest`.`tto_75_deadline` AS `UserRequesttto_75_deadline`,
+ `UserRequest`.`tto_75_passed` AS `UserRequesttto_75_passed`,
+ `UserRequest`.`tto_75_triggered` AS `UserRequesttto_75_triggered`,
+ `UserRequest`.`tto_75_overrun` AS `UserRequesttto_75_overrun`,
+ `UserRequest`.`tto_100_deadline` AS `UserRequesttto_100_deadline`,
+ `UserRequest`.`tto_100_passed` AS `UserRequesttto_100_passed`,
+ `UserRequest`.`tto_100_triggered` AS `UserRequesttto_100_triggered`,
+ `UserRequest`.`tto_100_overrun` AS `UserRequesttto_100_overrun`,
+ `UserRequest`.`ttr_started` AS `UserRequestttr_started`,
+ `UserRequest`.`ttr_laststart` AS `UserRequestttr_laststart`,
+ `UserRequest`.`ttr_stopped` AS `UserRequestttr_stopped`,
+ `UserRequest`.`ttr_75_deadline` AS `UserRequestttr_75_deadline`,
+ `UserRequest`.`ttr_75_passed` AS `UserRequestttr_75_passed`,
+ `UserRequest`.`ttr_75_triggered` AS `UserRequestttr_75_triggered`,
+ `UserRequest`.`ttr_75_overrun` AS `UserRequestttr_75_overrun`,
+ `UserRequest`.`ttr_100_deadline` AS `UserRequestttr_100_deadline`,
+ `UserRequest`.`ttr_100_passed` AS `UserRequestttr_100_passed`,
+ `UserRequest`.`ttr_100_triggered` AS `UserRequestttr_100_triggered`,
+ `UserRequest`.`ttr_100_overrun` AS `UserRequestttr_100_overrun`,
+ `UserRequest`.`public_log_index` AS `UserRequestpublic_log_index`,
+ `UserRequest_Ticket`.`description_format` AS `UserRequestdescription_format`,
+ `UserRequest_Ticket`.`private_log_index` AS `UserRequestprivate_log_index`
+ FROM 
+   `ticket_request` AS `UserRequest`
+   LEFT JOIN 
+      `service` AS `Service_service_id`
+    ON `UserRequest`.`service_id` = `Service_service_id`.`id`
+   LEFT JOIN 
+      `servicesubcategory` AS `ServiceSubcategory_servicesubcategory_id`
+    ON `UserRequest`.`servicesubcategory_id` = `ServiceSubcategory_servicesubcategory_id`.`id`
+   LEFT JOIN 
+      `ticket` AS `UserRequest_parent_request_id_Ticket`
+    ON `UserRequest`.`parent_request_id` = `UserRequest_parent_request_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Incident_parent_incident_id_Ticket`
+    ON `UserRequest`.`parent_incident_id` = `Incident_parent_incident_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Problem_parent_problem_id_Ticket`
+    ON `UserRequest`.`parent_problem_id` = `Problem_parent_problem_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Change_parent_change_id_Ticket`
+    ON `UserRequest`.`parent_change_id` = `Change_parent_change_id_Ticket`.`id`
+   INNER JOIN (
+      `ticket` AS `UserRequest_Ticket` 
+      INNER JOIN 
+         `organization` AS `Organization_org_id`
+       ON `UserRequest_Ticket`.`org_id` = `Organization_org_id`.`id`
+      LEFT JOIN (
+         `person` AS `Person_caller_id` 
+         INNER JOIN 
+            `contact` AS `Person_caller_id_Contact`
+          ON `Person_caller_id`.`id` = `Person_caller_id_Contact`.`id`
+      ) ON `UserRequest_Ticket`.`caller_id` = `Person_caller_id`.`id`
+      LEFT JOIN 
+         `contact` AS `Team_team_id_Contact`
+       ON `UserRequest_Ticket`.`team_id` = `Team_team_id_Contact`.`id`
+      LEFT JOIN (
+         `person` AS `Person_agent_id` 
+         INNER JOIN 
+            `contact` AS `Person_agent_id_Contact`
+          ON `Person_agent_id`.`id` = `Person_agent_id_Contact`.`id`
+      ) ON `UserRequest_Ticket`.`agent_id` = `Person_agent_id`.`id`
+   ) ON `UserRequest`.`id` = `UserRequest_Ticket`.`id`
+ WHERE ((((((`UserRequest`.`id` = '14382') AND COALESCE((`Team_team_id_Contact`.`finalclass` IN ('Team')), 1)) AND COALESCE((`UserRequest_parent_request_id_Ticket`.`finalclass` IN ('UserRequest')), 1)) AND COALESCE((`Incident_parent_incident_id_Ticket`.`finalclass` IN ('Incident')), 1)) AND COALESCE((`Problem_parent_problem_id_Ticket`.`finalclass` IN ('Problem')), 1)) AND COALESCE((`Change_parent_change_id_Ticket`.`finalclass` IN ('RoutineChange', 'ApprovedChange', 'NormalChange', 'EmergencyChange', 'Change')), 1))
+  '. | IssueLog |||
+2023-06-14 12:00:06 | Error   | 1     | Error: No result for the single row query: 'SELECT
+ DISTINCT `UserRequest`.`id` AS `UserRequestid`,
+ `UserRequest_Ticket`.`operational_status` AS `UserRequestoperational_status`,
+ `UserRequest_Ticket`.`ref` AS `UserRequestref`,
+ `UserRequest_Ticket`.`org_id` AS `UserRequestorg_id`,
+ `Organization_org_id`.`name` AS `UserRequestorg_name`,
+ `UserRequest_Ticket`.`caller_id` AS `UserRequestcaller_id`,
+ `Person_caller_id_Contact`.`name` AS `UserRequestcaller_name`,
+ `UserRequest_Ticket`.`team_id` AS `UserRequestteam_id`,
+ `Team_team_id_Contact`.`email` AS `UserRequestteam_name`,
+ `UserRequest_Ticket`.`agent_id` AS `UserRequestagent_id`,
+ `Person_agent_id_Contact`.`name` AS `UserRequestagent_name`,
+ `UserRequest_Ticket`.`title` AS `UserRequesttitle`,
+ `UserRequest_Ticket`.`description` AS `UserRequestdescription`,
+ `UserRequest_Ticket`.`start_date` AS `UserRequeststart_date`,
+ `UserRequest_Ticket`.`end_date` AS `UserRequestend_date`,
+ `UserRequest_Ticket`.`last_update` AS `UserRequestlast_update`,
+ `UserRequest_Ticket`.`close_date` AS `UserRequestclose_date`,
+ `UserRequest_Ticket`.`private_log` AS `UserRequestprivate_log`,
+ `UserRequest`.`status` AS `UserRequeststatus`,
+ `UserRequest`.`request_type` AS `UserRequestrequest_type`,
+ `UserRequest`.`impact` AS `UserRequestimpact`,
+ `UserRequest`.`priority` AS `UserRequestpriority`,
+ `UserRequest`.`urgency` AS `UserRequesturgency`,
+ `UserRequest`.`origin` AS `UserRequestorigin`,
+ `UserRequest`.`service_id` AS `UserRequestservice_id`,
+ `Service_service_id`.`name` AS `UserRequestservice_name`,
+ `UserRequest`.`servicesubcategory_id` AS `UserRequestservicesubcategory_id`,
+ `ServiceSubcategory_servicesubcategory_id`.`name` AS `UserRequestservicesubcategory_name`,
+ `UserRequest`.`escalation_flag` AS `UserRequestescalation_flag`,
+ `UserRequest`.`escalation_reason` AS `UserRequestescalation_reason`,
+ `UserRequest`.`assignment_date` AS `UserRequestassignment_date`,
+ `UserRequest`.`resolution_date` AS `UserRequestresolution_date`,
+ `UserRequest`.`last_pending_date` AS `UserRequestlast_pending_date`,
+ `UserRequest`.`cumulatedpending_timespent` AS `UserRequestcumulatedpending`,
+ `UserRequest`.`tto_timespent` AS `UserRequesttto`,
+ `UserRequest`.`ttr_timespent` AS `UserRequestttr`,
+ `UserRequest`.`tto_100_deadline` AS `UserRequesttto_escalation_deadline`,
+ `UserRequest`.`tto_100_passed` AS `UserRequestsla_tto_passed`,
+ `UserRequest`.`tto_100_overrun` AS `UserRequestsla_tto_over`,
+ `UserRequest`.`ttr_100_deadline` AS `UserRequestttr_escalation_deadline`,
+ `UserRequest`.`ttr_100_passed` AS `UserRequestsla_ttr_passed`,
+ `UserRequest`.`ttr_100_overrun` AS `UserRequestsla_ttr_over`,
+ `UserRequest`.`time_spent` AS `UserRequesttime_spent`,
+ `UserRequest`.`resolution_code` AS `UserRequestresolution_code`,
+ `UserRequest`.`solution` AS `UserRequestsolution`,
+ `UserRequest`.`pending_reason` AS `UserRequestpending_reason`,
+ `UserRequest`.`parent_request_id` AS `UserRequestparent_request_id`,
+ `UserRequest_parent_request_id_Ticket`.`ref` AS `UserRequestparent_request_ref`,
+ `UserRequest`.`parent_incident_id` AS `UserRequestparent_incident_id`,
+ `Incident_parent_incident_id_Ticket`.`ref` AS `UserRequestparent_incident_ref`,
+ `UserRequest`.`parent_problem_id` AS `UserRequestparent_problem_id`,
+ `Problem_parent_problem_id_Ticket`.`ref` AS `UserRequestparent_problem_ref`,
+ `UserRequest`.`parent_change_id` AS `UserRequestparent_change_id`,
+ `Change_parent_change_id_Ticket`.`ref` AS `UserRequestparent_change_ref`,
+ `UserRequest`.`public_log` AS `UserRequestpublic_log`,
+ `UserRequest`.`user_satisfaction` AS `UserRequestuser_satisfaction`,
+ `UserRequest`.`user_commment` AS `UserRequestuser_comment`,
+ `UserRequest_Ticket`.`finalclass` AS `UserRequestfinalclass`,
+ CAST(CONCAT(COALESCE(`UserRequest_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestfriendlyname`,
+ CAST(CONCAT(COALESCE(`Organization_org_id`.`name`, '')) AS CHAR) AS `UserRequestorg_id_friendlyname`,
+ COALESCE((`Organization_org_id`.`status` = 'inactive'), 0) AS `UserRequestorg_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Person_caller_id`.`first_name`, ''), COALESCE(' ', ''), COALESCE(`Person_caller_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestcaller_id_friendlyname`,
+ COALESCE((`Person_caller_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestcaller_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Team_team_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestteam_id_friendlyname`,
+ COALESCE((`Team_team_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestteam_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Person_agent_id`.`first_name`, ''), COALESCE(' ', ''), COALESCE(`Person_agent_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestagent_id_friendlyname`,
+ COALESCE((`Person_agent_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestagent_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Service_service_id`.`name`, '')) AS CHAR) AS `UserRequestservice_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`ServiceSubcategory_servicesubcategory_id`.`name`, '')) AS CHAR) AS `UserRequestservicesubcategory_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`UserRequest_parent_request_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_request_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Incident_parent_incident_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_incident_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Problem_parent_problem_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_problem_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Change_parent_change_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_change_id_friendlyname`,
+ `Change_parent_change_id_Ticket`.`finalclass` AS `UserRequestparent_change_id_finalclass_recall`,
+ `UserRequest`.`cumulatedpending_started` AS `UserRequestcumulatedpending_started`,
+ `UserRequest`.`cumulatedpending_laststart` AS `UserRequestcumulatedpending_laststart`,
+ `UserRequest`.`cumulatedpending_stopped` AS `UserRequestcumulatedpending_stopped`,
+ `UserRequest`.`tto_started` AS `UserRequesttto_started`,
+ `UserRequest`.`tto_laststart` AS `UserRequesttto_laststart`,
+ `UserRequest`.`tto_stopped` AS `UserRequesttto_stopped`,
+ `UserRequest`.`tto_75_deadline` AS `UserRequesttto_75_deadline`,
+ `UserRequest`.`tto_75_passed` AS `UserRequesttto_75_passed`,
+ `UserRequest`.`tto_75_triggered` AS `UserRequesttto_75_triggered`,
+ `UserRequest`.`tto_75_overrun` AS `UserRequesttto_75_overrun`,
+ `UserRequest`.`tto_100_deadline` AS `UserRequesttto_100_deadline`,
+ `UserRequest`.`tto_100_passed` AS `UserRequesttto_100_passed`,
+ `UserRequest`.`tto_100_triggered` AS `UserRequesttto_100_triggered`,
+ `UserRequest`.`tto_100_overrun` AS `UserRequesttto_100_overrun`,
+ `UserRequest`.`ttr_started` AS `UserRequestttr_started`,
+ `UserRequest`.`ttr_laststart` AS `UserRequestttr_laststart`,
+ `UserRequest`.`ttr_stopped` AS `UserRequestttr_stopped`,
+ `UserRequest`.`ttr_75_deadline` AS `UserRequestttr_75_deadline`,
+ `UserRequest`.`ttr_75_passed` AS `UserRequestttr_75_passed`,
+ `UserRequest`.`ttr_75_triggered` AS `UserRequestttr_75_triggered`,
+ `UserRequest`.`ttr_75_overrun` AS `UserRequestttr_75_overrun`,
+ `UserRequest`.`ttr_100_deadline` AS `UserRequestttr_100_deadline`,
+ `UserRequest`.`ttr_100_passed` AS `UserRequestttr_100_passed`,
+ `UserRequest`.`ttr_100_triggered` AS `UserRequestttr_100_triggered`,
+ `UserRequest`.`ttr_100_overrun` AS `UserRequestttr_100_overrun`,
+ `UserRequest`.`public_log_index` AS `UserRequestpublic_log_index`,
+ `UserRequest_Ticket`.`description_format` AS `UserRequestdescription_format`,
+ `UserRequest_Ticket`.`private_log_index` AS `UserRequestprivate_log_index`
+ FROM 
+   `ticket_request` AS `UserRequest`
+   LEFT JOIN 
+      `service` AS `Service_service_id`
+    ON `UserRequest`.`service_id` = `Service_service_id`.`id`
+   LEFT JOIN 
+      `servicesubcategory` AS `ServiceSubcategory_servicesubcategory_id`
+    ON `UserRequest`.`servicesubcategory_id` = `ServiceSubcategory_servicesubcategory_id`.`id`
+   LEFT JOIN 
+      `ticket` AS `UserRequest_parent_request_id_Ticket`
+    ON `UserRequest`.`parent_request_id` = `UserRequest_parent_request_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Incident_parent_incident_id_Ticket`
+    ON `UserRequest`.`parent_incident_id` = `Incident_parent_incident_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Problem_parent_problem_id_Ticket`
+    ON `UserRequest`.`parent_problem_id` = `Problem_parent_problem_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Change_parent_change_id_Ticket`
+    ON `UserRequest`.`parent_change_id` = `Change_parent_change_id_Ticket`.`id`
+   INNER JOIN (
+      `ticket` AS `UserRequest_Ticket` 
+      INNER JOIN 
+         `organization` AS `Organization_org_id`
+       ON `UserRequest_Ticket`.`org_id` = `Organization_org_id`.`id`
+      LEFT JOIN (
+         `person` AS `Person_caller_id` 
+         INNER JOIN 
+            `contact` AS `Person_caller_id_Contact`
+          ON `Person_caller_id`.`id` = `Person_caller_id_Contact`.`id`
+      ) ON `UserRequest_Ticket`.`caller_id` = `Person_caller_id`.`id`
+      LEFT JOIN 
+         `contact` AS `Team_team_id_Contact`
+       ON `UserRequest_Ticket`.`team_id` = `Team_team_id_Contact`.`id`
+      LEFT JOIN (
+         `person` AS `Person_agent_id` 
+         INNER JOIN 
+            `contact` AS `Person_agent_id_Contact`
+          ON `Person_agent_id`.`id` = `Person_agent_id_Contact`.`id`
+      ) ON `UserRequest_Ticket`.`agent_id` = `Person_agent_id`.`id`
+   ) ON `UserRequest`.`id` = `UserRequest_Ticket`.`id`
+ WHERE ((((((`UserRequest`.`id` = '14382') AND COALESCE((`Team_team_id_Contact`.`finalclass` IN ('Team')), 1)) AND COALESCE((`UserRequest_parent_request_id_Ticket`.`finalclass` IN ('UserRequest')), 1)) AND COALESCE((`Incident_parent_incident_id_Ticket`.`finalclass` IN ('Incident')), 1)) AND COALESCE((`Problem_parent_problem_id_Ticket`.`finalclass` IN ('Problem')), 1)) AND COALESCE((`Change_parent_change_id_Ticket`.`finalclass` IN ('RoutineChange', 'ApprovedChange', 'NormalChange', 'EmergencyChange', 'Change')), 1))
+  '. | IssueLog |||
+2023-06-14 12:01:05 | Error   | 1     | Error: No result for the single row query: 'SELECT
+ DISTINCT `UserRequest`.`id` AS `UserRequestid`,
+ `UserRequest_Ticket`.`operational_status` AS `UserRequestoperational_status`,
+ `UserRequest_Ticket`.`ref` AS `UserRequestref`,
+ `UserRequest_Ticket`.`org_id` AS `UserRequestorg_id`,
+ `Organization_org_id`.`name` AS `UserRequestorg_name`,
+ `UserRequest_Ticket`.`caller_id` AS `UserRequestcaller_id`,
+ `Person_caller_id_Contact`.`name` AS `UserRequestcaller_name`,
+ `UserRequest_Ticket`.`team_id` AS `UserRequestteam_id`,
+ `Team_team_id_Contact`.`email` AS `UserRequestteam_name`,
+ `UserRequest_Ticket`.`agent_id` AS `UserRequestagent_id`,
+ `Person_agent_id_Contact`.`name` AS `UserRequestagent_name`,
+ `UserRequest_Ticket`.`title` AS `UserRequesttitle`,
+ `UserRequest_Ticket`.`description` AS `UserRequestdescription`,
+ `UserRequest_Ticket`.`start_date` AS `UserRequeststart_date`,
+ `UserRequest_Ticket`.`end_date` AS `UserRequestend_date`,
+ `UserRequest_Ticket`.`last_update` AS `UserRequestlast_update`,
+ `UserRequest_Ticket`.`close_date` AS `UserRequestclose_date`,
+ `UserRequest_Ticket`.`private_log` AS `UserRequestprivate_log`,
+ `UserRequest`.`status` AS `UserRequeststatus`,
+ `UserRequest`.`request_type` AS `UserRequestrequest_type`,
+ `UserRequest`.`impact` AS `UserRequestimpact`,
+ `UserRequest`.`priority` AS `UserRequestpriority`,
+ `UserRequest`.`urgency` AS `UserRequesturgency`,
+ `UserRequest`.`origin` AS `UserRequestorigin`,
+ `UserRequest`.`service_id` AS `UserRequestservice_id`,
+ `Service_service_id`.`name` AS `UserRequestservice_name`,
+ `UserRequest`.`servicesubcategory_id` AS `UserRequestservicesubcategory_id`,
+ `ServiceSubcategory_servicesubcategory_id`.`name` AS `UserRequestservicesubcategory_name`,
+ `UserRequest`.`escalation_flag` AS `UserRequestescalation_flag`,
+ `UserRequest`.`escalation_reason` AS `UserRequestescalation_reason`,
+ `UserRequest`.`assignment_date` AS `UserRequestassignment_date`,
+ `UserRequest`.`resolution_date` AS `UserRequestresolution_date`,
+ `UserRequest`.`last_pending_date` AS `UserRequestlast_pending_date`,
+ `UserRequest`.`cumulatedpending_timespent` AS `UserRequestcumulatedpending`,
+ `UserRequest`.`tto_timespent` AS `UserRequesttto`,
+ `UserRequest`.`ttr_timespent` AS `UserRequestttr`,
+ `UserRequest`.`tto_100_deadline` AS `UserRequesttto_escalation_deadline`,
+ `UserRequest`.`tto_100_passed` AS `UserRequestsla_tto_passed`,
+ `UserRequest`.`tto_100_overrun` AS `UserRequestsla_tto_over`,
+ `UserRequest`.`ttr_100_deadline` AS `UserRequestttr_escalation_deadline`,
+ `UserRequest`.`ttr_100_passed` AS `UserRequestsla_ttr_passed`,
+ `UserRequest`.`ttr_100_overrun` AS `UserRequestsla_ttr_over`,
+ `UserRequest`.`time_spent` AS `UserRequesttime_spent`,
+ `UserRequest`.`resolution_code` AS `UserRequestresolution_code`,
+ `UserRequest`.`solution` AS `UserRequestsolution`,
+ `UserRequest`.`pending_reason` AS `UserRequestpending_reason`,
+ `UserRequest`.`parent_request_id` AS `UserRequestparent_request_id`,
+ `UserRequest_parent_request_id_Ticket`.`ref` AS `UserRequestparent_request_ref`,
+ `UserRequest`.`parent_incident_id` AS `UserRequestparent_incident_id`,
+ `Incident_parent_incident_id_Ticket`.`ref` AS `UserRequestparent_incident_ref`,
+ `UserRequest`.`parent_problem_id` AS `UserRequestparent_problem_id`,
+ `Problem_parent_problem_id_Ticket`.`ref` AS `UserRequestparent_problem_ref`,
+ `UserRequest`.`parent_change_id` AS `UserRequestparent_change_id`,
+ `Change_parent_change_id_Ticket`.`ref` AS `UserRequestparent_change_ref`,
+ `UserRequest`.`public_log` AS `UserRequestpublic_log`,
+ `UserRequest`.`user_satisfaction` AS `UserRequestuser_satisfaction`,
+ `UserRequest`.`user_commment` AS `UserRequestuser_comment`,
+ `UserRequest_Ticket`.`finalclass` AS `UserRequestfinalclass`,
+ CAST(CONCAT(COALESCE(`UserRequest_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestfriendlyname`,
+ CAST(CONCAT(COALESCE(`Organization_org_id`.`name`, '')) AS CHAR) AS `UserRequestorg_id_friendlyname`,
+ COALESCE((`Organization_org_id`.`status` = 'inactive'), 0) AS `UserRequestorg_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Person_caller_id`.`first_name`, ''), COALESCE(' ', ''), COALESCE(`Person_caller_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestcaller_id_friendlyname`,
+ COALESCE((`Person_caller_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestcaller_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Team_team_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestteam_id_friendlyname`,
+ COALESCE((`Team_team_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestteam_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Person_agent_id`.`first_name`, ''), COALESCE(' ', ''), COALESCE(`Person_agent_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestagent_id_friendlyname`,
+ COALESCE((`Person_agent_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestagent_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Service_service_id`.`name`, '')) AS CHAR) AS `UserRequestservice_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`ServiceSubcategory_servicesubcategory_id`.`name`, '')) AS CHAR) AS `UserRequestservicesubcategory_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`UserRequest_parent_request_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_request_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Incident_parent_incident_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_incident_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Problem_parent_problem_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_problem_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Change_parent_change_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_change_id_friendlyname`,
+ `Change_parent_change_id_Ticket`.`finalclass` AS `UserRequestparent_change_id_finalclass_recall`,
+ `UserRequest`.`cumulatedpending_started` AS `UserRequestcumulatedpending_started`,
+ `UserRequest`.`cumulatedpending_laststart` AS `UserRequestcumulatedpending_laststart`,
+ `UserRequest`.`cumulatedpending_stopped` AS `UserRequestcumulatedpending_stopped`,
+ `UserRequest`.`tto_started` AS `UserRequesttto_started`,
+ `UserRequest`.`tto_laststart` AS `UserRequesttto_laststart`,
+ `UserRequest`.`tto_stopped` AS `UserRequesttto_stopped`,
+ `UserRequest`.`tto_75_deadline` AS `UserRequesttto_75_deadline`,
+ `UserRequest`.`tto_75_passed` AS `UserRequesttto_75_passed`,
+ `UserRequest`.`tto_75_triggered` AS `UserRequesttto_75_triggered`,
+ `UserRequest`.`tto_75_overrun` AS `UserRequesttto_75_overrun`,
+ `UserRequest`.`tto_100_deadline` AS `UserRequesttto_100_deadline`,
+ `UserRequest`.`tto_100_passed` AS `UserRequesttto_100_passed`,
+ `UserRequest`.`tto_100_triggered` AS `UserRequesttto_100_triggered`,
+ `UserRequest`.`tto_100_overrun` AS `UserRequesttto_100_overrun`,
+ `UserRequest`.`ttr_started` AS `UserRequestttr_started`,
+ `UserRequest`.`ttr_laststart` AS `UserRequestttr_laststart`,
+ `UserRequest`.`ttr_stopped` AS `UserRequestttr_stopped`,
+ `UserRequest`.`ttr_75_deadline` AS `UserRequestttr_75_deadline`,
+ `UserRequest`.`ttr_75_passed` AS `UserRequestttr_75_passed`,
+ `UserRequest`.`ttr_75_triggered` AS `UserRequestttr_75_triggered`,
+ `UserRequest`.`ttr_75_overrun` AS `UserRequestttr_75_overrun`,
+ `UserRequest`.`ttr_100_deadline` AS `UserRequestttr_100_deadline`,
+ `UserRequest`.`ttr_100_passed` AS `UserRequestttr_100_passed`,
+ `UserRequest`.`ttr_100_triggered` AS `UserRequestttr_100_triggered`,
+ `UserRequest`.`ttr_100_overrun` AS `UserRequestttr_100_overrun`,
+ `UserRequest`.`public_log_index` AS `UserRequestpublic_log_index`,
+ `UserRequest_Ticket`.`description_format` AS `UserRequestdescription_format`,
+ `UserRequest_Ticket`.`private_log_index` AS `UserRequestprivate_log_index`
+ FROM 
+   `ticket_request` AS `UserRequest`
+   LEFT JOIN 
+      `service` AS `Service_service_id`
+    ON `UserRequest`.`service_id` = `Service_service_id`.`id`
+   LEFT JOIN 
+      `servicesubcategory` AS `ServiceSubcategory_servicesubcategory_id`
+    ON `UserRequest`.`servicesubcategory_id` = `ServiceSubcategory_servicesubcategory_id`.`id`
+   LEFT JOIN 
+      `ticket` AS `UserRequest_parent_request_id_Ticket`
+    ON `UserRequest`.`parent_request_id` = `UserRequest_parent_request_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Incident_parent_incident_id_Ticket`
+    ON `UserRequest`.`parent_incident_id` = `Incident_parent_incident_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Problem_parent_problem_id_Ticket`
+    ON `UserRequest`.`parent_problem_id` = `Problem_parent_problem_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Change_parent_change_id_Ticket`
+    ON `UserRequest`.`parent_change_id` = `Change_parent_change_id_Ticket`.`id`
+   INNER JOIN (
+      `ticket` AS `UserRequest_Ticket` 
+      INNER JOIN 
+         `organization` AS `Organization_org_id`
+       ON `UserRequest_Ticket`.`org_id` = `Organization_org_id`.`id`
+      LEFT JOIN (
+         `person` AS `Person_caller_id` 
+         INNER JOIN 
+            `contact` AS `Person_caller_id_Contact`
+          ON `Person_caller_id`.`id` = `Person_caller_id_Contact`.`id`
+      ) ON `UserRequest_Ticket`.`caller_id` = `Person_caller_id`.`id`
+      LEFT JOIN 
+         `contact` AS `Team_team_id_Contact`
+       ON `UserRequest_Ticket`.`team_id` = `Team_team_id_Contact`.`id`
+      LEFT JOIN (
+         `person` AS `Person_agent_id` 
+         INNER JOIN 
+            `contact` AS `Person_agent_id_Contact`
+          ON `Person_agent_id`.`id` = `Person_agent_id_Contact`.`id`
+      ) ON `UserRequest_Ticket`.`agent_id` = `Person_agent_id`.`id`
+   ) ON `UserRequest`.`id` = `UserRequest_Ticket`.`id`
+ WHERE ((((((`UserRequest`.`id` = '14382') AND COALESCE((`Team_team_id_Contact`.`finalclass` IN ('Team')), 1)) AND COALESCE((`UserRequest_parent_request_id_Ticket`.`finalclass` IN ('UserRequest')), 1)) AND COALESCE((`Incident_parent_incident_id_Ticket`.`finalclass` IN ('Incident')), 1)) AND COALESCE((`Problem_parent_problem_id_Ticket`.`finalclass` IN ('Problem')), 1)) AND COALESCE((`Change_parent_change_id_Ticket`.`finalclass` IN ('RoutineChange', 'ApprovedChange', 'NormalChange', 'EmergencyChange', 'Change')), 1))
+  '. | IssueLog |||
+2023-06-14 12:01:15 | Error   | 1     | Error: No result for the single row query: 'SELECT
+ DISTINCT `UserRequest`.`id` AS `UserRequestid`,
+ `UserRequest_Ticket`.`operational_status` AS `UserRequestoperational_status`,
+ `UserRequest_Ticket`.`ref` AS `UserRequestref`,
+ `UserRequest_Ticket`.`org_id` AS `UserRequestorg_id`,
+ `Organization_org_id`.`name` AS `UserRequestorg_name`,
+ `UserRequest_Ticket`.`caller_id` AS `UserRequestcaller_id`,
+ `Person_caller_id_Contact`.`name` AS `UserRequestcaller_name`,
+ `UserRequest_Ticket`.`team_id` AS `UserRequestteam_id`,
+ `Team_team_id_Contact`.`email` AS `UserRequestteam_name`,
+ `UserRequest_Ticket`.`agent_id` AS `UserRequestagent_id`,
+ `Person_agent_id_Contact`.`name` AS `UserRequestagent_name`,
+ `UserRequest_Ticket`.`title` AS `UserRequesttitle`,
+ `UserRequest_Ticket`.`description` AS `UserRequestdescription`,
+ `UserRequest_Ticket`.`start_date` AS `UserRequeststart_date`,
+ `UserRequest_Ticket`.`end_date` AS `UserRequestend_date`,
+ `UserRequest_Ticket`.`last_update` AS `UserRequestlast_update`,
+ `UserRequest_Ticket`.`close_date` AS `UserRequestclose_date`,
+ `UserRequest_Ticket`.`private_log` AS `UserRequestprivate_log`,
+ `UserRequest`.`status` AS `UserRequeststatus`,
+ `UserRequest`.`request_type` AS `UserRequestrequest_type`,
+ `UserRequest`.`impact` AS `UserRequestimpact`,
+ `UserRequest`.`priority` AS `UserRequestpriority`,
+ `UserRequest`.`urgency` AS `UserRequesturgency`,
+ `UserRequest`.`origin` AS `UserRequestorigin`,
+ `UserRequest`.`service_id` AS `UserRequestservice_id`,
+ `Service_service_id`.`name` AS `UserRequestservice_name`,
+ `UserRequest`.`servicesubcategory_id` AS `UserRequestservicesubcategory_id`,
+ `ServiceSubcategory_servicesubcategory_id`.`name` AS `UserRequestservicesubcategory_name`,
+ `UserRequest`.`escalation_flag` AS `UserRequestescalation_flag`,
+ `UserRequest`.`escalation_reason` AS `UserRequestescalation_reason`,
+ `UserRequest`.`assignment_date` AS `UserRequestassignment_date`,
+ `UserRequest`.`resolution_date` AS `UserRequestresolution_date`,
+ `UserRequest`.`last_pending_date` AS `UserRequestlast_pending_date`,
+ `UserRequest`.`cumulatedpending_timespent` AS `UserRequestcumulatedpending`,
+ `UserRequest`.`tto_timespent` AS `UserRequesttto`,
+ `UserRequest`.`ttr_timespent` AS `UserRequestttr`,
+ `UserRequest`.`tto_100_deadline` AS `UserRequesttto_escalation_deadline`,
+ `UserRequest`.`tto_100_passed` AS `UserRequestsla_tto_passed`,
+ `UserRequest`.`tto_100_overrun` AS `UserRequestsla_tto_over`,
+ `UserRequest`.`ttr_100_deadline` AS `UserRequestttr_escalation_deadline`,
+ `UserRequest`.`ttr_100_passed` AS `UserRequestsla_ttr_passed`,
+ `UserRequest`.`ttr_100_overrun` AS `UserRequestsla_ttr_over`,
+ `UserRequest`.`time_spent` AS `UserRequesttime_spent`,
+ `UserRequest`.`resolution_code` AS `UserRequestresolution_code`,
+ `UserRequest`.`solution` AS `UserRequestsolution`,
+ `UserRequest`.`pending_reason` AS `UserRequestpending_reason`,
+ `UserRequest`.`parent_request_id` AS `UserRequestparent_request_id`,
+ `UserRequest_parent_request_id_Ticket`.`ref` AS `UserRequestparent_request_ref`,
+ `UserRequest`.`parent_incident_id` AS `UserRequestparent_incident_id`,
+ `Incident_parent_incident_id_Ticket`.`ref` AS `UserRequestparent_incident_ref`,
+ `UserRequest`.`parent_problem_id` AS `UserRequestparent_problem_id`,
+ `Problem_parent_problem_id_Ticket`.`ref` AS `UserRequestparent_problem_ref`,
+ `UserRequest`.`parent_change_id` AS `UserRequestparent_change_id`,
+ `Change_parent_change_id_Ticket`.`ref` AS `UserRequestparent_change_ref`,
+ `UserRequest`.`public_log` AS `UserRequestpublic_log`,
+ `UserRequest`.`user_satisfaction` AS `UserRequestuser_satisfaction`,
+ `UserRequest`.`user_commment` AS `UserRequestuser_comment`,
+ `UserRequest_Ticket`.`finalclass` AS `UserRequestfinalclass`,
+ CAST(CONCAT(COALESCE(`UserRequest_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestfriendlyname`,
+ CAST(CONCAT(COALESCE(`Organization_org_id`.`name`, '')) AS CHAR) AS `UserRequestorg_id_friendlyname`,
+ COALESCE((`Organization_org_id`.`status` = 'inactive'), 0) AS `UserRequestorg_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Person_caller_id`.`first_name`, ''), COALESCE(' ', ''), COALESCE(`Person_caller_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestcaller_id_friendlyname`,
+ COALESCE((`Person_caller_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestcaller_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Team_team_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestteam_id_friendlyname`,
+ COALESCE((`Team_team_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestteam_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Person_agent_id`.`first_name`, ''), COALESCE(' ', ''), COALESCE(`Person_agent_id_Contact`.`name`, '')) AS CHAR) AS `UserRequestagent_id_friendlyname`,
+ COALESCE((`Person_agent_id_Contact`.`status` = 'inactive'), 0) AS `UserRequestagent_id_obsolescence_flag`,
+ CAST(CONCAT(COALESCE(`Service_service_id`.`name`, '')) AS CHAR) AS `UserRequestservice_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`ServiceSubcategory_servicesubcategory_id`.`name`, '')) AS CHAR) AS `UserRequestservicesubcategory_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`UserRequest_parent_request_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_request_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Incident_parent_incident_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_incident_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Problem_parent_problem_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_problem_id_friendlyname`,
+ CAST(CONCAT(COALESCE(`Change_parent_change_id_Ticket`.`ref`, '')) AS CHAR) AS `UserRequestparent_change_id_friendlyname`,
+ `Change_parent_change_id_Ticket`.`finalclass` AS `UserRequestparent_change_id_finalclass_recall`,
+ `UserRequest`.`cumulatedpending_started` AS `UserRequestcumulatedpending_started`,
+ `UserRequest`.`cumulatedpending_laststart` AS `UserRequestcumulatedpending_laststart`,
+ `UserRequest`.`cumulatedpending_stopped` AS `UserRequestcumulatedpending_stopped`,
+ `UserRequest`.`tto_started` AS `UserRequesttto_started`,
+ `UserRequest`.`tto_laststart` AS `UserRequesttto_laststart`,
+ `UserRequest`.`tto_stopped` AS `UserRequesttto_stopped`,
+ `UserRequest`.`tto_75_deadline` AS `UserRequesttto_75_deadline`,
+ `UserRequest`.`tto_75_passed` AS `UserRequesttto_75_passed`,
+ `UserRequest`.`tto_75_triggered` AS `UserRequesttto_75_triggered`,
+ `UserRequest`.`tto_75_overrun` AS `UserRequesttto_75_overrun`,
+ `UserRequest`.`tto_100_deadline` AS `UserRequesttto_100_deadline`,
+ `UserRequest`.`tto_100_passed` AS `UserRequesttto_100_passed`,
+ `UserRequest`.`tto_100_triggered` AS `UserRequesttto_100_triggered`,
+ `UserRequest`.`tto_100_overrun` AS `UserRequesttto_100_overrun`,
+ `UserRequest`.`ttr_started` AS `UserRequestttr_started`,
+ `UserRequest`.`ttr_laststart` AS `UserRequestttr_laststart`,
+ `UserRequest`.`ttr_stopped` AS `UserRequestttr_stopped`,
+ `UserRequest`.`ttr_75_deadline` AS `UserRequestttr_75_deadline`,
+ `UserRequest`.`ttr_75_passed` AS `UserRequestttr_75_passed`,
+ `UserRequest`.`ttr_75_triggered` AS `UserRequestttr_75_triggered`,
+ `UserRequest`.`ttr_75_overrun` AS `UserRequestttr_75_overrun`,
+ `UserRequest`.`ttr_100_deadline` AS `UserRequestttr_100_deadline`,
+ `UserRequest`.`ttr_100_passed` AS `UserRequestttr_100_passed`,
+ `UserRequest`.`ttr_100_triggered` AS `UserRequestttr_100_triggered`,
+ `UserRequest`.`ttr_100_overrun` AS `UserRequestttr_100_overrun`,
+ `UserRequest`.`public_log_index` AS `UserRequestpublic_log_index`,
+ `UserRequest_Ticket`.`description_format` AS `UserRequestdescription_format`,
+ `UserRequest_Ticket`.`private_log_index` AS `UserRequestprivate_log_index`
+ FROM 
+   `ticket_request` AS `UserRequest`
+   LEFT JOIN 
+      `service` AS `Service_service_id`
+    ON `UserRequest`.`service_id` = `Service_service_id`.`id`
+   LEFT JOIN 
+      `servicesubcategory` AS `ServiceSubcategory_servicesubcategory_id`
+    ON `UserRequest`.`servicesubcategory_id` = `ServiceSubcategory_servicesubcategory_id`.`id`
+   LEFT JOIN 
+      `ticket` AS `UserRequest_parent_request_id_Ticket`
+    ON `UserRequest`.`parent_request_id` = `UserRequest_parent_request_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Incident_parent_incident_id_Ticket`
+    ON `UserRequest`.`parent_incident_id` = `Incident_parent_incident_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Problem_parent_problem_id_Ticket`
+    ON `UserRequest`.`parent_problem_id` = `Problem_parent_problem_id_Ticket`.`id`
+   LEFT JOIN 
+      `ticket` AS `Change_parent_change_id_Ticket`
+    ON `UserRequest`.`parent_change_id` = `Change_parent_change_id_Ticket`.`id`
+   INNER JOIN (
+      `ticket` AS `UserRequest_Ticket` 
+      INNER JOIN 
+         `organization` AS `Organization_org_id`
+       ON `UserRequest_Ticket`.`org_id` = `Organization_org_id`.`id`
+      LEFT JOIN (
+         `person` AS `Person_caller_id` 
+         INNER JOIN 
+            `contact` AS `Person_caller_id_Contact`
+          ON `Person_caller_id`.`id` = `Person_caller_id_Contact`.`id`
+      ) ON `UserRequest_Ticket`.`caller_id` = `Person_caller_id`.`id`
+      LEFT JOIN 
+         `contact` AS `Team_team_id_Contact`
+       ON `UserRequest_Ticket`.`team_id` = `Team_team_id_Contact`.`id`
+      LEFT JOIN (
+         `person` AS `Person_agent_id` 
+         INNER JOIN 
+            `contact` AS `Person_agent_id_Contact`
+          ON `Person_agent_id`.`id` = `Person_agent_id_Contact`.`id`
+      ) ON `UserRequest_Ticket`.`agent_id` = `Person_agent_id`.`id`
+   ) ON `UserRequest`.`id` = `UserRequest_Ticket`.`id`
+ WHERE ((((((`UserRequest`.`id` = '14382') AND COALESCE((`Team_team_id_Contact`.`finalclass` IN ('Team')), 1)) AND COALESCE((`UserRequest_parent_request_id_Ticket`.`finalclass` IN ('UserRequest')), 1)) AND COALESCE((`Incident_parent_incident_id_Ticket`.`finalclass` IN ('Incident')), 1)) AND COALESCE((`Problem_parent_problem_id_Ticket`.`finalclass` IN ('Problem')), 1)) AND COALESCE((`Change_parent_change_id_Ticket`.`finalclass` IN ('RoutineChange', 'ApprovedChange', 'NormalChange', 'EmergencyChange', 'Change')), 1))
+  '. | IssueLog |||
+2023-06-14 12:09:40 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:11:47 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:11:52 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:11:53 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:20:02 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:21:04 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:21:12 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:21:26 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:21:31 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:23:05 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:23:08 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:46:29 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:46:36 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:46:52 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:47:06 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:47:06 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:48:04 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:50:11 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:54:00 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:54:36 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:55:17 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:55:26 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:55:27 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 12:56:15 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:03:33 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:04:04 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:04:18 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:06:00 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:09:23 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:09:35 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:10:02 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:11:07 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:12:28 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:14:52 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:15:30 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:19:01 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:19:19 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:19:45 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:45:08 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:46:36 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:46:42 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 13:56:36 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 15:30:26 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 15:36:02 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 15:37:47 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 15:43:18 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 15:52:20 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 15:52:54 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 15:52:54 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 15:57:11 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 15:59:25 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 15:59:30 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:00:40 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:01:09 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:02:11 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:02:11 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:02:15 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:14:05 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:16:16 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:30:29 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:30:40 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:30:47 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:30:59 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:31:11 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:31:28 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:33:12 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:37:27 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:39:45 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:39:49 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:48:23 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:48:59 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:52:39 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 16:55:50 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 17:07:34 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 17:08:34 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 17:08:46 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 17:10:25 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 17:13:18 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 17:19:24 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 17:20:15 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 17:20:43 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 17:20:43 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 17:21:46 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 17:22:55 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 17:23:17 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 17:28:27 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-14 17:34:05 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-20 15:24:00 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-20 15:24:08 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-20 15:25:59 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-20 15:41:30 | Error   | 2     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-20 16:12:45 | Error   | 2     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-20 16:14:36 | Error   | 2     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-20 16:16:08 | Error   | 2     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:16:31 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:18:15 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:29:44 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:30:28 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:35:23 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:35:44 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:35:46 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:36:07 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:39:46 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:42:33 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:43:26 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:43:28 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:44:35 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:45:45 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:46:03 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:47:43 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:51:16 | Error   | 180   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:52:35 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:53:20 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:54:26 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:56:11 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:57:04 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:57:27 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:57:34 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:57:34 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:57:46 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:57:46 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 15:58:02 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 16:01:36 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 16:01:54 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 16:02:11 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-21 16:03:14 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-22 11:45:06 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-22 11:45:14 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-22 11:45:21 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-22 11:45:28 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-22 11:52:31 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-06-22 11:52:37 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||

@@ -1,0 +1,532 @@
+2023-03-03 09:20:28 | Error   | 1     | Unexpected input at line 1: '
+Debug trace:
+#0 /var/www/html/itop/core/oql/oql-lexer.php(81): OQLLexerRaw->yylex1()
+#1 /var/www/html/itop/core/oql/oql-lexer.php(683): OQLLexerRaw->yylex()
+#2 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(78): OQLLexer->yylex()
+#3 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(105): OqlInterpreter->Parse()
+#4 /var/www/html/itop/core/oql/expression.class.inc.php(279): OqlInterpreter->ParseExpression()
+#5 /var/www/html/itop/sources/application/search/criterionparser.class.inc.php(77): Expression::FromOQL()
+#6 /var/www/html/itop/pages/ajax.searchform.php(47): Combodo\iTop\Application\Search\CriterionParser::Parse()
+#7 {main} | IssueLog |||
+2023-03-03 09:39:52 | Error   | 1     | Unexpected input at line 1: '
+Debug trace:
+#0 /var/www/html/itop/core/oql/oql-lexer.php(81): OQLLexerRaw->yylex1()
+#1 /var/www/html/itop/core/oql/oql-lexer.php(683): OQLLexerRaw->yylex()
+#2 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(78): OQLLexer->yylex()
+#3 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(105): OqlInterpreter->Parse()
+#4 /var/www/html/itop/core/oql/expression.class.inc.php(279): OqlInterpreter->ParseExpression()
+#5 /var/www/html/itop/sources/application/search/criterionparser.class.inc.php(77): Expression::FromOQL()
+#6 /var/www/html/itop/pages/ajax.searchform.php(47): Combodo\iTop\Application\Search\CriterionParser::Parse()
+#7 {main} | IssueLog |||
+2023-03-03 10:28:02 | Error   | 1     | Unexpected input at line 1: '
+Debug trace:
+#0 /var/www/html/itop/core/oql/oql-lexer.php(81): OQLLexerRaw->yylex1()
+#1 /var/www/html/itop/core/oql/oql-lexer.php(683): OQLLexerRaw->yylex()
+#2 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(78): OQLLexer->yylex()
+#3 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(105): OqlInterpreter->Parse()
+#4 /var/www/html/itop/core/oql/expression.class.inc.php(279): OqlInterpreter->ParseExpression()
+#5 /var/www/html/itop/sources/application/search/criterionparser.class.inc.php(77): Expression::FromOQL()
+#6 /var/www/html/itop/pages/ajax.searchform.php(47): Combodo\iTop\Application\Search\CriterionParser::Parse()
+#7 {main} | IssueLog |||
+2023-03-03 17:03:34 | Error   | 2     | Unexpected input at line 1: '
+Debug trace:
+#0 /var/www/html/itop/core/oql/oql-lexer.php(81): OQLLexerRaw->yylex1()
+#1 /var/www/html/itop/core/oql/oql-lexer.php(683): OQLLexerRaw->yylex()
+#2 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(78): OQLLexer->yylex()
+#3 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(105): OqlInterpreter->Parse()
+#4 /var/www/html/itop/core/oql/expression.class.inc.php(279): OqlInterpreter->ParseExpression()
+#5 /var/www/html/itop/sources/application/search/criterionparser.class.inc.php(77): Expression::FromOQL()
+#6 /var/www/html/itop/pages/ajax.searchform.php(47): Combodo\iTop\Application\Search\CriterionParser::Parse()
+#7 {main} | IssueLog |||
+2023-03-03 17:03:49 | Error   | 2     | Unexpected input at line 1: '
+Debug trace:
+#0 /var/www/html/itop/core/oql/oql-lexer.php(81): OQLLexerRaw->yylex1()
+#1 /var/www/html/itop/core/oql/oql-lexer.php(683): OQLLexerRaw->yylex()
+#2 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(78): OQLLexer->yylex()
+#3 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(105): OqlInterpreter->Parse()
+#4 /var/www/html/itop/core/oql/expression.class.inc.php(279): OqlInterpreter->ParseExpression()
+#5 /var/www/html/itop/sources/application/search/criterionparser.class.inc.php(77): Expression::FromOQL()
+#6 /var/www/html/itop/pages/ajax.searchform.php(47): Combodo\iTop\Application\Search\CriterionParser::Parse()
+#7 {main} | IssueLog |||
+2023-03-03 17:07:35 | Error   | 2     | Unexpected input at line 1: '
+Debug trace:
+#0 /var/www/html/itop/core/oql/oql-lexer.php(81): OQLLexerRaw->yylex1()
+#1 /var/www/html/itop/core/oql/oql-lexer.php(683): OQLLexerRaw->yylex()
+#2 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(78): OQLLexer->yylex()
+#3 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(105): OqlInterpreter->Parse()
+#4 /var/www/html/itop/core/oql/expression.class.inc.php(279): OqlInterpreter->ParseExpression()
+#5 /var/www/html/itop/sources/application/search/criterionparser.class.inc.php(77): Expression::FromOQL()
+#6 /var/www/html/itop/pages/ajax.searchform.php(47): Combodo\iTop\Application\Search\CriterionParser::Parse()
+#7 {main} | IssueLog |||
+2023-03-04 09:18:33 | Error   | 2     | Unexpected input at line 1: '
+Debug trace:
+#0 /var/www/html/itop/core/oql/oql-lexer.php(81): OQLLexerRaw->yylex1()
+#1 /var/www/html/itop/core/oql/oql-lexer.php(683): OQLLexerRaw->yylex()
+#2 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(78): OQLLexer->yylex()
+#3 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(105): OqlInterpreter->Parse()
+#4 /var/www/html/itop/core/oql/expression.class.inc.php(279): OqlInterpreter->ParseExpression()
+#5 /var/www/html/itop/sources/application/search/criterionparser.class.inc.php(77): Expression::FromOQL()
+#6 /var/www/html/itop/pages/ajax.searchform.php(47): Combodo\iTop\Application\Search\CriterionParser::Parse()
+#7 {main} | IssueLog |||
+2023-03-04 11:15:09 | Error   | 2     | Unexpected input at line 1: '
+Debug trace:
+#0 /var/www/html/itop/core/oql/oql-lexer.php(81): OQLLexerRaw->yylex1()
+#1 /var/www/html/itop/core/oql/oql-lexer.php(683): OQLLexerRaw->yylex()
+#2 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(78): OQLLexer->yylex()
+#3 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(105): OqlInterpreter->Parse()
+#4 /var/www/html/itop/core/oql/expression.class.inc.php(279): OqlInterpreter->ParseExpression()
+#5 /var/www/html/itop/sources/application/search/criterionparser.class.inc.php(77): Expression::FromOQL()
+#6 /var/www/html/itop/pages/ajax.searchform.php(47): Combodo\iTop\Application\Search\CriterionParser::Parse()
+#7 {main} | IssueLog |||
+2023-03-04 11:22:26 | Error   | 2     | Unexpected input at line 1: '
+Debug trace:
+#0 /var/www/html/itop/core/oql/oql-lexer.php(81): OQLLexerRaw->yylex1()
+#1 /var/www/html/itop/core/oql/oql-lexer.php(683): OQLLexerRaw->yylex()
+#2 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(78): OQLLexer->yylex()
+#3 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(105): OqlInterpreter->Parse()
+#4 /var/www/html/itop/core/oql/expression.class.inc.php(279): OqlInterpreter->ParseExpression()
+#5 /var/www/html/itop/sources/application/search/criterionparser.class.inc.php(77): Expression::FromOQL()
+#6 /var/www/html/itop/pages/ajax.searchform.php(47): Combodo\iTop\Application\Search\CriterionParser::Parse()
+#7 {main} | IssueLog |||
+2023-03-06 11:44:21 | Error   | 2     | Unexpected input at line 1: '
+Debug trace:
+#0 /var/www/html/itop/core/oql/oql-lexer.php(81): OQLLexerRaw->yylex1()
+#1 /var/www/html/itop/core/oql/oql-lexer.php(683): OQLLexerRaw->yylex()
+#2 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(78): OQLLexer->yylex()
+#3 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(105): OqlInterpreter->Parse()
+#4 /var/www/html/itop/core/oql/expression.class.inc.php(279): OqlInterpreter->ParseExpression()
+#5 /var/www/html/itop/sources/application/search/criterionparser.class.inc.php(77): Expression::FromOQL()
+#6 /var/www/html/itop/pages/ajax.searchform.php(47): Combodo\iTop\Application\Search\CriterionParser::Parse()
+#7 {main} | IssueLog |||
+2023-03-06 11:45:54 | Error   | 2     | Unexpected input at line 1: '
+Debug trace:
+#0 /var/www/html/itop/core/oql/oql-lexer.php(81): OQLLexerRaw->yylex1()
+#1 /var/www/html/itop/core/oql/oql-lexer.php(683): OQLLexerRaw->yylex()
+#2 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(78): OQLLexer->yylex()
+#3 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(105): OqlInterpreter->Parse()
+#4 /var/www/html/itop/core/oql/expression.class.inc.php(279): OqlInterpreter->ParseExpression()
+#5 /var/www/html/itop/sources/application/search/criterionparser.class.inc.php(77): Expression::FromOQL()
+#6 /var/www/html/itop/pages/ajax.searchform.php(47): Combodo\iTop\Application\Search\CriterionParser::Parse()
+#7 {main} | IssueLog |||
+2023-03-09 11:41:07 | Error   | 1     | Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) | IssueLog |||
+array (
+  'type' => 1,
+  'file' => '/var/www/html/itop/core/dbobjectsearch.class.php',
+  'line' => 2026,
+)
+2023-03-09 11:51:41 | Error   | 1     | Allowed memory size of 583008256 bytes exhausted (tried to allocate 73428992 bytes) | IssueLog |||
+array (
+  'type' => 1,
+  'file' => '/var/www/html/itop/data/cache-production/twig/templates/9b/9be6a8c8241a12cffba8b19c2b3408beef60451c244d0a8221949721e2980867.php',
+  'line' => 80,
+)
+2023-03-09 12:18:19 | Error   | 1     | Allowed memory size of 583008256 bytes exhausted (tried to allocate 199266304 bytes) | IssueLog |||
+array (
+  'type' => 1,
+  'file' => '/var/www/html/itop/data/cache-production/twig/templates/9b/9be6a8c8241a12cffba8b19c2b3408beef60451c244d0a8221949721e2980867.php',
+  'line' => 80,
+)
+2023-03-09 15:04:47 | Error   | 1     | Uncaught TypeError: Argument 4 passed to Combodo\iTop\Application\UI\Base\Component\DataTable\DataTableUIBlockFactory::GetOptionsForRendering() must be of the type int, string given, called in /var/www/html/itop/sources/Controller/AjaxRenderController.php on line 269 and defined in /var/www/html/itop/sources/application/UI/Base/Component/DataTable/DataTableUIBlockFactory.php:729
+Stack trace:
+#0 /var/www/html/itop/sources/Controller/AjaxRenderController.php(269): Combodo\iTop\Application\UI\Base\Component\DataTable\DataTableUIBlockFactory::GetOptionsForRendering()
+#1 /var/www/html/itop/pages/ajax.render.php(83): Combodo\iTop\Controller\AjaxRenderController::SearchAndRefresh()
+#2 {main}
+  thrown | IssueLog |||
+array (
+  'type' => 1,
+  'file' => '/var/www/html/itop/sources/application/UI/Base/Component/DataTable/DataTableUIBlockFactory.php',
+  'line' => 729,
+)
+2023-03-11 12:18:17 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-11 12:18:24 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-11 12:21:37 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-11 12:21:41 | Info    | 1     | Creating backup: '/var/www/html/itop/data/backups/manual/itopcfac-2023-03-11_12_21.tar.gz' | IssueLog |||
+2023-03-11 12:21:41 | Info    | 1     | backup: creating tmp dir '/var/www/html/itop/data/tmp-backup-1921104243' | IssueLog |||
+2023-03-11 12:21:41 | Info    | 1     | backup: adding resource '/var/www/html/itop/conf/production/config-itop.php' | IssueLog |||
+2023-03-11 12:21:41 | Info    | 1     | Starting backup of localhost/itopcfac(suffix:'') | IssueLog |||
+2023-03-11 12:21:41 | Info    | 1     | backup: generate data file with command: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-l6mf5U" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-1921104243/itop-dump.sql' 'itopcfac'  | IssueLog |||
+2023-03-11 12:21:41 | Info    | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 12:21:41 | Error   | 1     | Failed to execute: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-l6mf5U" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-1921104243/itop-dump.sql' 'itopcfac' . The command returned:2 | IssueLog |||
+2023-03-11 12:21:41 | Error   | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 12:21:41 | Error   | 1     | backup - Failed to execute mysqldump: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:11:21 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-11 13:11:36 | Info    | 1     | Creating backup: '/var/www/html/itop/data/backups/manual/itopcfac-2023-03-11_13_11.tar.gz' | IssueLog |||
+2023-03-11 13:11:36 | Info    | 1     | backup: creating tmp dir '/var/www/html/itop/data/tmp-backup-605360959' | IssueLog |||
+2023-03-11 13:11:36 | Info    | 1     | backup: adding resource '/var/www/html/itop/conf/production/config-itop.php' | IssueLog |||
+2023-03-11 13:11:36 | Info    | 1     | Starting backup of localhost/itopcfac(suffix:'') | IssueLog |||
+2023-03-11 13:11:36 | Info    | 1     | backup: generate data file with command: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-iipwq4" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-605360959/itop-dump.sql' 'itopcfac'  | IssueLog |||
+2023-03-11 13:11:36 | Info    | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:11:36 | Error   | 1     | Failed to execute: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-iipwq4" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-605360959/itop-dump.sql' 'itopcfac' . The command returned:2 | IssueLog |||
+2023-03-11 13:11:36 | Error   | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:11:36 | Error   | 1     | backup - Failed to execute mysqldump: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:15:20 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-11 13:16:31 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-11 13:16:34 | Info    | 1     | Creating backup: '/var/www/html/itop/data/backups/manual/itopcfac-2023-03-11_13_16.tar.gz' | IssueLog |||
+2023-03-11 13:16:34 | Info    | 1     | backup: creating tmp dir '/var/www/html/itop/data/tmp-backup-217457096' | IssueLog |||
+2023-03-11 13:16:34 | Info    | 1     | backup: adding resource '/var/www/html/itop/conf/production/config-itop.php' | IssueLog |||
+2023-03-11 13:16:34 | Info    | 1     | Starting backup of localhost/itopcfac(suffix:'') | IssueLog |||
+2023-03-11 13:16:34 | Info    | 1     | backup: generate data file with command: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-dibLDt" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-217457096/itop-dump.sql' 'itopcfac'  | IssueLog |||
+2023-03-11 13:16:34 | Info    | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:16:34 | Error   | 1     | Failed to execute: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-dibLDt" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-217457096/itop-dump.sql' 'itopcfac' . The command returned:2 | IssueLog |||
+2023-03-11 13:16:34 | Error   | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:16:34 | Error   | 1     | backup - Failed to execute mysqldump: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:17:09 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-11 13:17:13 | Info    | 1     | Creating backup: '/var/www/html/itop/data/backups/manual/itopcfac-2023-03-11_13_17.tar.gz' | IssueLog |||
+2023-03-11 13:17:13 | Info    | 1     | backup: creating tmp dir '/var/www/html/itop/data/tmp-backup-101597636' | IssueLog |||
+2023-03-11 13:17:13 | Info    | 1     | backup: adding resource '/var/www/html/itop/conf/production/config-itop.php' | IssueLog |||
+2023-03-11 13:17:13 | Info    | 1     | Starting backup of localhost/itopcfac(suffix:'') | IssueLog |||
+2023-03-11 13:17:13 | Info    | 1     | backup: generate data file with command: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-o8ea4z" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-101597636/itop-dump.sql' 'itopcfac'  | IssueLog |||
+2023-03-11 13:17:13 | Info    | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:17:13 | Error   | 1     | Failed to execute: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-o8ea4z" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-101597636/itop-dump.sql' 'itopcfac' . The command returned:2 | IssueLog |||
+2023-03-11 13:17:13 | Error   | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:17:13 | Error   | 1     | backup - Failed to execute mysqldump: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:20:51 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-11 13:21:17 | Info    | 1     | Creating backup: '/var/www/html/itop/data/backups/manual/itopcfac-2023-03-11_13_21.tar.gz' | IssueLog |||
+2023-03-11 13:21:17 | Info    | 1     | backup: creating tmp dir '/var/www/html/itop/data/tmp-backup-1435076587' | IssueLog |||
+2023-03-11 13:21:17 | Info    | 1     | backup: adding resource '/var/www/html/itop/conf/production/config-itop.php' | IssueLog |||
+2023-03-11 13:21:17 | Info    | 1     | Starting backup of localhost/itopcfac(suffix:'') | IssueLog |||
+2023-03-11 13:21:17 | Info    | 1     | backup: generate data file with command: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-UbuQdl" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-1435076587/itop-dump.sql' 'itopcfac'  | IssueLog |||
+2023-03-11 13:21:17 | Info    | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:21:17 | Error   | 1     | Failed to execute: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-UbuQdl" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-1435076587/itop-dump.sql' 'itopcfac' . The command returned:2 | IssueLog |||
+2023-03-11 13:21:17 | Error   | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:21:17 | Error   | 1     | backup - Failed to execute mysqldump: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:25:40 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-11 13:25:55 | Info    | 1     | Creating backup: '/var/www/html/itop/data/backups/manual/itopcfac-2023-03-11_13_25.tar.gz' | IssueLog |||
+2023-03-11 13:25:55 | Info    | 1     | backup: creating tmp dir '/var/www/html/itop/data/tmp-backup-1114349790' | IssueLog |||
+2023-03-11 13:25:55 | Info    | 1     | backup: adding resource '/var/www/html/itop/conf/production/config-itop.php' | IssueLog |||
+2023-03-11 13:25:55 | Info    | 1     | Starting backup of localhost/itopcfac(suffix:'') | IssueLog |||
+2023-03-11 13:25:55 | Info    | 1     | backup: generate data file with command: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-Tsl2RY" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-1114349790/itop-dump.sql' 'itopcfac'  | IssueLog |||
+2023-03-11 13:25:55 | Info    | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:25:55 | Error   | 1     | Failed to execute: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-Tsl2RY" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-1114349790/itop-dump.sql' 'itopcfac' . The command returned:2 | IssueLog |||
+2023-03-11 13:25:55 | Error   | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:25:55 | Error   | 1     | backup - Failed to execute mysqldump: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:30:44 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-11 13:30:59 | Info    | 1     | Creating backup: '/var/www/html/itop/data/backups/manual/itopcfac-2023-03-11_13_30.tar.gz' | IssueLog |||
+2023-03-11 13:30:59 | Info    | 1     | backup: creating tmp dir '/var/www/html/itop/data/tmp-backup-1379274204' | IssueLog |||
+2023-03-11 13:30:59 | Info    | 1     | backup: adding resource '/var/www/html/itop/conf/production/config-itop.php' | IssueLog |||
+2023-03-11 13:30:59 | Info    | 1     | Starting backup of localhost/itopcfac(suffix:'') | IssueLog |||
+2023-03-11 13:30:59 | Info    | 1     | backup: generate data file with command: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-jimbsl" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-1379274204/itop-dump.sql' 'itopcfac'  | IssueLog |||
+2023-03-11 13:30:59 | Info    | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:30:59 | Error   | 1     | Failed to execute: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-jimbsl" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-1379274204/itop-dump.sql' 'itopcfac' . The command returned:2 | IssueLog |||
+2023-03-11 13:30:59 | Error   | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:30:59 | Error   | 1     | backup - Failed to execute mysqldump: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:31:37 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-11 13:33:54 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-11 13:33:57 | Info    | 1     | Creating backup: '/var/www/html/itop/data/backups/manual/itopcfac-2023-03-11_13_33.tar.gz' | IssueLog |||
+2023-03-11 13:33:57 | Info    | 1     | backup: creating tmp dir '/var/www/html/itop/data/tmp-backup-1374203319' | IssueLog |||
+2023-03-11 13:33:57 | Info    | 1     | backup: adding resource '/var/www/html/itop/conf/production/config-itop.php' | IssueLog |||
+2023-03-11 13:33:57 | Info    | 1     | Starting backup of localhost/itopcfac(suffix:'') | IssueLog |||
+2023-03-11 13:33:57 | Info    | 1     | backup: generate data file with command: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-UF4awD" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-1374203319/itop-dump.sql' 'itopcfac'  | IssueLog |||
+2023-03-11 13:33:57 | Info    | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:33:57 | Error   | 1     | Failed to execute: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-UF4awD" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-1374203319/itop-dump.sql' 'itopcfac' . The command returned:2 | IssueLog |||
+2023-03-11 13:33:57 | Error   | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:33:57 | Error   | 1     | backup - Failed to execute mysqldump: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:35:28 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-11 13:35:30 | Info    | 1     | Creating backup: '/var/www/html/itop/data/backups/manual/itopcfac-2023-03-11_13_35.tar.gz' | IssueLog |||
+2023-03-11 13:35:30 | Info    | 1     | backup: creating tmp dir '/var/www/html/itop/data/tmp-backup-1579063204' | IssueLog |||
+2023-03-11 13:35:30 | Info    | 1     | backup: adding resource '/var/www/html/itop/conf/production/config-itop.php' | IssueLog |||
+2023-03-11 13:35:30 | Info    | 1     | Starting backup of localhost/itopcfac(suffix:'') | IssueLog |||
+2023-03-11 13:35:30 | Info    | 1     | backup: generate data file with command: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-Q8EUvO" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-1579063204/itop-dump.sql' 'itopcfac'  | IssueLog |||
+2023-03-11 13:35:30 | Info    | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:35:30 | Error   | 1     | Failed to execute: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-Q8EUvO" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-1579063204/itop-dump.sql' 'itopcfac' . The command returned:2 | IssueLog |||
+2023-03-11 13:35:30 | Error   | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 13:35:30 | Error   | 1     | backup - Failed to execute mysqldump: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 14:15:46 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-11 14:18:53 | Info    | 1     | Creating backup: '/var/www/html/itop/data/backups/manual/itopcfac-2023-03-11_14_18.tar.gz' | IssueLog |||
+2023-03-11 14:18:53 | Info    | 1     | backup: creating tmp dir '/var/www/html/itop/data/tmp-backup-2072877536' | IssueLog |||
+2023-03-11 14:18:53 | Info    | 1     | backup: adding resource '/var/www/html/itop/conf/production/config-itop.php' | IssueLog |||
+2023-03-11 14:18:53 | Info    | 1     | Starting backup of localhost/itopcfac(suffix:'') | IssueLog |||
+2023-03-11 14:18:53 | Info    | 1     | backup: generate data file with command: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-fDxARM" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-2072877536/itop-dump.sql' 'itopcfac'  | IssueLog |||
+2023-03-11 14:18:53 | Info    | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 14:18:53 | Error   | 1     | Failed to execute: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-fDxARM" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-2072877536/itop-dump.sql' 'itopcfac' . The command returned:2 | IssueLog |||
+2023-03-11 14:18:53 | Error   | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-11 14:18:53 | Error   | 1     | backup - Failed to execute mysqldump: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-13 15:58:28 | Error   | 1     | UI.php 'bulk_delete_confirmed' : invalid transaction_id ! data: user='AdminCfacIheb94', class='CustomerContract' | IssueLog |||
+2023-03-13 15:58:28 | Error   | 1     | Error: Error: objects have already been deleted!. | IssueLog |||
+2023-03-14 10:08:02 | Error   | 1     | Unexpected input at line 1: '
+Debug trace:
+#0 /var/www/html/itop/core/oql/oql-lexer.php(81): OQLLexerRaw->yylex1()
+#1 /var/www/html/itop/core/oql/oql-lexer.php(683): OQLLexerRaw->yylex()
+#2 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(78): OQLLexer->yylex()
+#3 /var/www/html/itop/core/oql/oqlinterpreter.class.inc.php(105): OqlInterpreter->Parse()
+#4 /var/www/html/itop/core/oql/expression.class.inc.php(279): OqlInterpreter->ParseExpression()
+#5 /var/www/html/itop/sources/application/search/criterionparser.class.inc.php(77): Expression::FromOQL()
+#6 /var/www/html/itop/pages/ajax.searchform.php(47): Combodo\iTop\Application\Search\CriterionParser::Parse()
+#7 {main} | IssueLog |||
+2023-03-16 11:54:04 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-16 12:29:24 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:29:32 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:33:17 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:33:42 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:34:32 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:34:51 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:35:21 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:36:03 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:36:58 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:37:30 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:39:38 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:55:08 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:55:14 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:56:04 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:56:07 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:56:45 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:57:26 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:59:25 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:59:30 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 12:59:57 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 13:00:47 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 13:01:42 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 13:02:45 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 13:03:49 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 13:07:11 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 13:08:29 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 13:09:18 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 13:09:28 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 13:17:36 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 13:17:55 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 13:18:46 | Error   | 1     | Error: End date must be greater than start date.: issues = {0=>End date must be greater than start date.}, class = Communication, id = 1. | IssueLog |||
+2023-03-16 13:18:53 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 13:19:04 | Error   | 1     | Error: End date must be greater than start date.: issues = {0=>End date must be greater than start date.}, class = Communication, id = 1. | IssueLog |||
+2023-03-16 13:19:30 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 13:19:30 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 13:19:36 | Error   | 1     | Error: End date must be greater than start date.: issues = {0=>End date must be greater than start date.}, class = Communication, id = 1. | IssueLog |||
+2023-03-16 13:19:37 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 13:19:44 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 14:12:58 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-16 14:13:04 | Info    | 1     | Creating backup: '/var/www/html/itop/data/backups/manual/itopcfac_v20230316-2023-03-16_14_13.tar.gz' | IssueLog |||
+2023-03-16 14:13:04 | Info    | 1     | backup: creating tmp dir '/var/www/html/itop/data/tmp-backup-364713284' | IssueLog |||
+2023-03-16 14:13:04 | Info    | 1     | backup: adding resource '/var/www/html/itop/conf/production/config-itop.php' | IssueLog |||
+2023-03-16 14:13:04 | Info    | 1     | Starting backup of localhost/itopcfac_v20230316(suffix:'') | IssueLog |||
+2023-03-16 14:13:04 | Info    | 1     | backup: generate data file with command: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-yVZyFZ" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-364713284/itop-dump.sql' 'itopcfac_v20230316'  | IssueLog |||
+2023-03-16 14:13:04 | Info    | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-16 14:13:04 | Error   | 1     | Failed to execute: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-yVZyFZ" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-364713284/itop-dump.sql' 'itopcfac_v20230316' . The command returned:2 | IssueLog |||
+2023-03-16 14:13:04 | Error   | 1     | mysqldump said: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-16 14:13:04 | Error   | 1     | backup - Failed to execute mysqldump: mysqldump: Couldn't execute 'FLUSH TABLES': Access denied; you need (at least one of) the RELOAD or FLUSH_TABLES privilege(s) for this operation (1227) | IssueLog |||
+2023-03-16 14:13:24 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-16 14:13:27 | Info    | 1     | Creating backup: '/var/www/html/itop/data/backups/manual/itopcfac_v20230316-2023-03-16_14_13.tar.gz' | IssueLog |||
+2023-03-16 14:13:27 | Info    | 1     | backup: creating tmp dir '/var/www/html/itop/data/tmp-backup-278162714' | IssueLog |||
+2023-03-16 14:13:27 | Info    | 1     | backup: adding resource '/var/www/html/itop/conf/production/config-itop.php' | IssueLog |||
+2023-03-16 14:13:27 | Info    | 1     | Starting backup of localhost/itopcfac_v20230316(suffix:'') | IssueLog |||
+2023-03-16 14:13:27 | Info    | 1     | backup: generate data file with command: mysqldump --defaults-extra-file="/tmp/itop-mysqldump-oAIFTT" --opt --skip-lock-tables --default-character-set=utf8mb4 --add-drop-database --single-transaction --host='localhost'  --port='3306' --user=xxxxx  --result-file='/var/www/html/itop/data/tmp-backup-278162714/itop-dump.sql' 'itopcfac_v20230316'  | IssueLog |||
+2023-03-16 14:13:30 | Info    | 1     | backup: adding to archive files 'array (
+  0 => '/var/www/html/itop/data/tmp-backup-278162714/config-itop.php',
+  1 => '/var/www/html/itop/data/tmp-backup-278162714/itop-dump.sql',
+)' | IssueLog |||
+2023-03-16 14:13:30 | Info    | 1     | backup: removing tmp folder '/var/www/html/itop/data/tmp-backup-278162714' | IssueLog |||
+2023-03-16 14:13:31 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-16 14:38:21 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 17:27:46 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-16 17:40:00 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 17:40:43 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 17:41:03 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 17:45:19 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-16 17:45:45 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 08:38:32 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 08:42:33 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 08:42:41 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 08:42:42 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 08:50:53 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 08:50:53 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 08:51:38 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 08:51:57 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 08:52:09 | Error   | 1     | Wrong field specification &#039; risk&#039;: Unknown attribute risk from class UserRequest
+#0 /var/www/html/itop/core/tabularbulkexport.class.inc.php(389): TabularBulkExport->SetFields()
+#1 /var/www/html/itop/core/spreadsheetbulkexport.class.inc.php(113): TabularBulkExport->ReadParameters()
+#2 /var/www/html/itop/webservices/export-v2.php(511): SpreadsheetBulkExport->ReadParameters()
+#3 /var/www/html/itop/webservices/export-v2.php(691): CheckParameters()
+#4 {main} | IssueLog |||
+2023-03-17 08:52:35 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 08:54:31 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 08:55:39 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 09:00:49 | Info    | 1     | mysqldump -V 2>&1 said: mysqldump  Ver 8.0.32-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu)) | IssueLog |||
+2023-03-17 09:03:04 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 09:04:04 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 09:04:14 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 09:04:14 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 09:57:23 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 12:06:19 | Error   |       | #0 /var/www/html/itop/core/cmdbsource.class.inc.php(574): CMDBSource::DBQuery()
+#1 /var/www/html/itop/core/dbobjectset.class.php(769): CMDBSource::Query()
+#2 /var/www/html/itop/core/dbobjectset.class.php(960): DBObjectSet->Load()
+#3 /var/www/html/itop/core/userrights.class.inc.php(1898): DBObjectSet->Fetch()
+#4 /var/www/html/itop/core/userrights.class.inc.php(1862): UserRights::FindUser()
+#5 /var/www/html/itop/core/userrights.class.inc.php(847): UserRights::FindUser()
+#6 /var/www/html/itop/application/loginwebpage.class.inc.php(684): UserRights::Login()
+#7 /var/www/html/itop/application/loginform.class.inc.php(112): LoginWebPage::CheckLoggedUser()
+#8 /var/www/html/itop/application/applicationextension.inc.php(103): LoginForm->OnConnected()
+#9 /var/www/html/itop/application/loginwebpage.class.inc.php(483): AbstractLoginFSMExtension->LoginAction()
+#10 /var/www/html/itop/application/loginwebpage.class.inc.php(1010): LoginWebPage::Login()
+#11 /var/www/html/itop/pages/ajax.render.php(54): LoginWebPage::DoLoginEx()
+#12 {main} | IssueLog |||
+2023-03-17 12:06:25 | Error   |       | #0 /var/www/html/itop/core/cmdbsource.class.inc.php(574): CMDBSource::DBQuery()
+#1 /var/www/html/itop/core/dbobjectset.class.php(915): CMDBSource::Query()
+#2 /var/www/html/itop/application/applicationcontext.class.inc.php(158): DBObjectSet->CountWithLimit()
+#3 /var/www/html/itop/application/applicationcontext.class.inc.php(123): ApplicationContext->ReadContext()
+#4 /var/www/html/itop/sources/application/WebPage/NiceWebPage.php(196): ApplicationContext->__construct()
+#5 /var/www/html/itop/sources/application/WebPage/NiceWebPage.php(90): NiceWebPage->GetApplicationContext()
+#6 /var/www/html/itop/sources/application/WebPage/WebPage.php(195): NiceWebPage->InitializeScripts()
+#7 /var/www/html/itop/sources/application/WebPage/NiceWebPage.php(73): WebPage->__construct()
+#8 /var/www/html/itop/application/loginwebpage.class.inc.php(88): NiceWebPage->__construct()
+#9 /var/www/html/itop/application/loginwebpage.class.inc.php(77): LoginWebPage->__construct()
+#10 /var/www/html/itop/application/loginform.class.inc.php(48): LoginWebPage::NewLoginWebPage()
+#11 /var/www/html/itop/application/applicationextension.inc.php(91): LoginForm->OnReadCredentials()
+#12 /var/www/html/itop/application/loginwebpage.class.inc.php(483): AbstractLoginFSMExtension->LoginAction()
+#13 /var/www/html/itop/application/loginwebpage.class.inc.php(1010): LoginWebPage::Login()
+#14 /var/www/html/itop/application/loginwebpage.class.inc.php(990): LoginWebPage::DoLoginEx()
+#15 /var/www/html/itop/env-production/itop-config/config.php(81): LoginWebPage::DoLogin()
+#16 /var/www/html/itop/pages/exec.php(65): require_once('/var/www/html/i...')
+#17 {main} | IssueLog |||
+2023-03-17 12:19:39 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 13:57:24 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 13:58:13 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 13:58:16 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 13:58:26 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 13:58:36 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 14:03:55 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 14:04:37 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 14:05:53 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 14:06:56 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 14:06:57 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 15:29:09 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 15:30:25 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 15:30:40 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 15:30:45 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 15:30:56 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 15:31:00 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 15:31:08 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 15:31:14 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 15:31:27 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 15:40:58 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:31:31 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:34:09 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:38:14 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:38:44 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:39:20 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:39:51 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:41:00 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:42:23 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:42:58 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:43:11 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:43:47 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:44:09 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:45:13 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:47:31 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:48:11 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:49:14 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:51:01 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:51:16 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:51:29 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:51:34 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:54:01 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:54:02 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:54:04 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:54:44 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:54:50 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:55:57 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:56:04 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:56:07 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:56:16 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:57:09 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:57:31 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:57:34 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:58:29 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:58:29 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:58:35 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 16:59:03 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:01:01 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:02:57 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:11:18 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:11:47 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:13:26 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:13:26 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:14:01 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:14:16 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:14:46 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:15:03 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:18:42 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:19:13 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:19:42 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:19:47 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:20:02 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:20:15 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:20:26 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:20:43 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:20:54 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:21:18 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:22:11 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:22:48 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:23:00 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:23:20 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:23:44 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:23:52 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:24:07 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:24:31 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:25:33 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:29:21 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:29:21 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:29:42 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:29:50 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:30:08 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:30:56 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:31:01 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:31:02 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:31:03 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:31:37 | Error   | 11    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:32:51 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:33:08 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:33:13 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:35:34 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:35:55 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:36:05 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:36:07 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:36:20 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:36:30 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:36:56 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:37:03 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:37:13 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:37:13 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-17 17:37:18 | Error   | 157   | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 09:04:04 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 09:04:45 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 09:10:29 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 09:10:39 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 09:10:52 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 09:11:02 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 09:59:24 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 10:22:49 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 10:22:49 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 10:31:54 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 10:32:24 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 10:32:55 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 11:46:06 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 11:47:06 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:13:16 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:13:43 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:13:43 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:18:25 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:24:23 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:24:35 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:30:36 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:30:57 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:30:57 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:31:07 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:31:07 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:32:00 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:33:01 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:33:17 | Error   | 36    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:33:18 | Error   | 36    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:35:13 | Error   | 36    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:36:17 | Error   | 36    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:37:41 | Error   | 36    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:40:03 | Error   | 36    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:42:05 | Error   | 36    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:43:09 | Error   | 36    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:44:28 | Error   | 36    | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 12:45:46 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-18 13:07:14 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-21 08:52:30 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-29 11:03:23 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-29 11:03:34 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-29 11:04:53 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-29 11:06:16 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-29 11:06:46 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2023-03-29 11:06:46 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||

@@ -1,0 +1,4 @@
+2023-06-14 12:26:41 | Info    | 1     | iTop is configured to use the <b>SMTP</b> transport. | SetupLog |||
+2023-06-14 12:26:41 | Info    | 1     | SMTP configuration (from config-itop.php): host: smtp.gmail.com, port: 25, user: iheb@cfac.com.tn, password: ****************, encryption: tls. | SetupLog |||
+2023-06-14 12:26:41 | Ok      | 1     | PHP settings are ok to proceed with a test of the email | SetupLog |||
+2023-06-14 12:27:04 | Ok      | 1     | The email has been sent, check your inbox for the incoming mail... | SetupLog |||

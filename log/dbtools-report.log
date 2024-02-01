@@ -1,0 +1,14 @@
+-- Database Maintenance tools: 2023-03-11 13:40:34
+-- DISCLAIMER: BACKUP YOUR DATABASE BEFORE RUNNING THE FIXES
+-- Important: after fixing errors in the database you'll have to run the analysis again as new inconsistencies will be generated
+
+-- 
+-- Class: Brand (Brand)
+-- Count: 1
+-- Error: Orphan record in `brand`, it should have its counterpart in table `typology`
+-- Query: SELECT DISTINCT `brand`.`id` AS id FROM `brand` LEFT JOIN `typology` ON `brand`.`id` = `typology`.`id` WHERE `typology`.`id` IS NULL
+
+-- Fix it (indication):
+
+DELETE `brand` FROM `brand` LEFT JOIN `typology` ON `brand`.`id` = `typology`.`id` WHERE `typology`.`id` IS NULL
+

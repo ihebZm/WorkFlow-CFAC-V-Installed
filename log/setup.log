@@ -1,0 +1,11 @@
+2023-12-21 08:49:47 | Info    | 1     | iTop is configured to use the <b>SMTP</b> transport. | SetupLog |||
+2023-12-21 08:49:47 | Info    | 1     | SMTP configuration (from config-itop.php): host: smtp.gmail.com, port: 587, user: administration@cfac.com.tn, password: *******************, encryption: tls. | SetupLog |||
+2023-12-21 08:49:47 | Ok      | 1     | PHP settings are ok to proceed with a test of the email | SetupLog |||
+2023-12-21 08:50:11 | Ok      | 1     | The email has been sent, check your inbox for the incoming mail... | SetupLog |||
+2023-12-21 08:50:55 | Info    | 1     | iTop is configured to use the <b>SMTP</b> transport. | SetupLog |||
+2023-12-21 08:50:55 | Info    | 1     | SMTP configuration (from config-itop.php): host: smtp.gmail.com, port: 587, user: administration@cfac.com.tn, password: *******************, encryption: tls. | SetupLog |||
+2023-12-21 08:50:55 | Ok      | 1     | PHP settings are ok to proceed with a test of the email | SetupLog |||
+2023-12-26 12:49:21 | Info    | 1     | iTop is configured to use the <b>SMTP</b> transport. | SetupLog |||
+2023-12-26 12:49:21 | Info    | 1     | SMTP configuration (from config-itop.php): host: smtp.gmail.com, port: 587, user: iheb@cfac.com.tn, password: ****************, encryption: tls. | SetupLog |||
+2023-12-26 12:49:21 | Ok      | 1     | PHP settings are ok to proceed with a test of the email | SetupLog |||
+2023-12-26 12:49:32 | Ok      | 1     | The email has been sent, check your inbox for the incoming mail... | SetupLog |||
