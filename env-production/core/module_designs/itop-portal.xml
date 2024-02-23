@@ -399,7 +399,8 @@
     </brick>
     <brick id="approvals" xsi:type="Combodo\iTop\Portal\Brick\ApprovalBrick" _altered_in="itop-approval-portal">
       <!-- TODO: restreindre les droits de visibilité à cette brique -->
-      <active>true</active>
+      <!-- EDITED: I deny the access for this portal -->
+      <active>false</active>
       <rank>
         <default>60</default>
       </rank>
@@ -429,7 +430,8 @@
       <data_loading>full</data_loading>
     </brick>
     <brick id="faq" xsi:type="Combodo\iTop\Portal\Brick\BrowseBrick" _altered_in="itop-faq-light">
-      <active>true</active>
+      <!-- EDITED : To deny acecs to FAQ IN Portal -->
+      <active>false</active>
       <rank>
         <default>40</default>
       </rank>

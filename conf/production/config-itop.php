@@ -84,7 +84,7 @@ $MySettings = array(
 */
 	'db_host' => 'localhost',
 
-	'db_name' => 'testing_new_attribute_workflow',
+	'db_name' => 'itopcfac_02_02_2023',
 
 	'db_pwd' => '',
 
@@ -110,9 +110,33 @@ $MySettings = array(
 	//	default: ''
 	'email_default_sender_label' => '',
 
+	//customization de CFAC Group to make the emails Work
+
 	// email_transport: Mean to send emails: PHPMail (uses the function mail()), SMTP (implements the client protocol) or SMTP_OAuth (connect to the server using OAuth 2.0)
 	//	default: 'PHPMail'
-	'email_transport' => 'PHPMail',
+	// 'email_transport' => 'PHPMail',
+	'email_transport' => 'SMTP',
+	
+	// email_transport_smtp.encryption:tls ou ssl (optional)
+	//	default: ''
+	'email_transport_smtp.encryption' => 'tls',
+	
+	// email_transport_smtp.host: host name or IP address (optional)
+	//  default: 'localhost' 
+	'email_transport_smtp.host' => 'smtp.gmail.com',
+
+	// email_transport_smtp.password: Authentication password (optional)
+	'email_transport_smtp.password' => 'qmth jbgf vvdp aorh',
+
+	// email_transport_smtp.password: port number (optional)
+	// 		default: 25
+	'email_transport_smtp.port' => 587,
+
+	// email_transport_smtp.username: Authentication user (optional)
+	// 		default: 25
+	'email_transport_smtp.username' => 'serviceclient@cfac.com.tn',
+
+	// end of the customization
 
 	// email_validation_pattern: Regular expression to validate/detect the format of an eMail address
 	//	default: '[a-zA-Z0-9._&\'-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z0-9-]{2,}'

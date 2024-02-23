@@ -236,7 +236,8 @@
     <module_design id="itop-portal" xsi:type="portal" _delta="if_exists">
       <bricks>
         <brick id="faq" xsi:type="Combodo\iTop\Portal\Brick\BrowseBrick" _delta="define">
-          <active>true</active>
+          <!-- EDITED : To deny acecs to FAQ IN Portal -->
+          <active>false</active>
           <rank>
             <default>40</default>
           </rank>
