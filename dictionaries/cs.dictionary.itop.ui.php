@@ -575,7 +575,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:AccessRO-Users' => ITOP_APPLICATION_SHORT.' je pouze ke čtení pro koncové uživatele',
 	'UI:ApplicationEnvironment'                    => 'Aplikační prostředí: %1$s',
 	'UI:Login:RetypePwdDoesNotMatch'               => 'Nová hesla se neshodují!',
-	'UI:Button:Login'                              => 'Přihlásit',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Button:Login'                              => 'Přihlásit',
+	'UI:Button:Login'                              => 'Přihlásit i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted'              => 'Přístup je omezen. Kontaktujte administrátora.',
 	'UI:Login:Error:AccessAdmin'                   => 'Přístup vyhrazen osobám s administrátorskými právy. Kontaktujte administrátora.',
 	'UI:Login:Error:WrongOrganizationName'         => 'Unknown organization~~',

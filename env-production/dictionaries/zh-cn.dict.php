@@ -1180,7 +1180,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:SearchValue:CheckAll' => '全选',
 	'UI:SearchValue:UncheckAll' => '反选',
 	'UI:SelectOne' => '-- 请选择 --',
-	'UI:Login:Welcome' => '欢迎使用 iTop!',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Login:Welcome' => '欢迎使用 iTop!',
+	'UI:Login:Welcome' => '欢迎使用 i-CFAC!',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:IncorrectLoginPassword' => '用户名或密码错误, 请重试.',
 	'UI:Login:IdentifyYourself' => '请完成身份认证',
 	'UI:Login:UserNamePrompt' => '用户名',
@@ -1213,7 +1216,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:Login:RetypeNewPasswordPrompt' => '重复新密码',
 	'UI:Login:IncorrectOldPassword' => '错误: 旧密码错误',
 	'UI:LogOffMenu' => '注销',
-	'UI:LogOff:ThankYou' => '感谢使用 iTop',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:LogOff:ThankYou' => '感谢使用 iTop',
+	'UI:LogOff:ThankYou' => '感谢使用 i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => '点击这里再次登录...',
 	'UI:ChangePwdMenu' => '修改密码...',
 	'UI:Login:PasswordChanged' => '密码已成功设置!',
@@ -1221,7 +1227,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:AccessRO-Users' => 'iTop 对于终端用户是只读的',
 	'UI:ApplicationEnvironment' => '应用环境: %1$s',
 	'UI:Login:RetypePwdDoesNotMatch' => '新密码输入不一致!',
-	'UI:Button:Login' => '登录iTop',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Button:Login' => '登录iTop',
+	'UI:Button:Login' => '登录i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'iTop 访问被限制. 请联系管理员.',
 	'UI:Login:Error:AccessAdmin' => '只有具有管理员权限的人才能访问. 请联系管理员.',
 	'UI:Login:Error:WrongOrganizationName' => '未知组织',

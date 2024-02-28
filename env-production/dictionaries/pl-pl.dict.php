@@ -1178,7 +1178,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:SearchValue:CheckAll' => 'Zaznacz wszystko',
 	'UI:SearchValue:UncheckAll' => 'Odznacz wszystko',
 	'UI:SelectOne' => '-- wybierz --',
-	'UI:Login:Welcome' => 'Witamy w iTop!',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Login:Welcome' => 'Witamy w iTop!',
+	'UI:Login:Welcome' => 'Witamy w i-CFAC!',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:IncorrectLoginPassword' => 'Nieprawidłowy login/hasło, spróbuj ponownie.',
 	'UI:Login:IdentifyYourself' => 'Zidentyfikuj się przed wejściem',
 	'UI:Login:UserNamePrompt' => 'Login',
@@ -1211,7 +1214,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:Login:RetypeNewPasswordPrompt' => 'Powtórz nowe hasło',
 	'UI:Login:IncorrectOldPassword' => 'Błąd: stare hasło jest nieprawidłowe',
 	'UI:LogOffMenu' => 'Wyloguj',
-	'UI:LogOff:ThankYou' => 'Dziękujemy za użycie iTop',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:LogOff:ThankYou' => 'Dziękujemy za użycie iTop',
+	'UI:LogOff:ThankYou' => 'Dziękujemy za użycie i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Kliknij tutaj, aby zalogować się ponownie...',
 	'UI:ChangePwdMenu' => 'Zmień hasło...',
 	'UI:Login:PasswordChanged' => 'Hasło ustawione pomyślnie!',
@@ -1219,7 +1225,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:AccessRO-Users' => 'iTop jest tylko do odczytu dla użytkowników końcowych',
 	'UI:ApplicationEnvironment' => 'Środowisko aplikacji: %1$s',
 	'UI:Login:RetypePwdDoesNotMatch' => 'Nowe hasło i powtórzone nowe hasło nie pasują!',
-	'UI:Button:Login' => 'Wejdź do iTop',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Button:Login' => 'Wejdź do iTop',
+	'UI:Button:Login' => 'Wejdź do i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'iTop dostęp jest ograniczony. Prosimy o kontakt z administratorem iTop.',
 	'UI:Login:Error:AccessAdmin' => 'Dostęp ograniczony do osób z uprawnieniami administratora. Prosimy o kontakt z administratorem iTop.',
 	'UI:Login:Error:WrongOrganizationName' => 'Nieznana organizacja',

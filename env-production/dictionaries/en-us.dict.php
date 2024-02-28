@@ -1179,7 +1179,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:SearchValue:CheckAll' => 'Check All',
 	'UI:SearchValue:UncheckAll' => 'Uncheck All',
 	'UI:SelectOne' => '-- select one --',
-	'UI:Login:Welcome' => 'Welcome to iTop!',
+	// ^ START HERE Customization for ICFAC name on itop page 
+	// 'UI:Login:Welcome' => 'Welcome to iTop!',
+	'UI:Login:Welcome' => 'Welcome to i-CFAC!',
+	// ^ END HERE Customization for ICFAC name on itop page 
 	'UI:Login:IncorrectLoginPassword' => 'Incorrect login/password, please try again.',
 	'UI:Login:IdentifyYourself' => 'Identify yourself before continuing',
 	'UI:Login:UserNamePrompt' => 'User Name',
@@ -1212,7 +1215,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:Login:RetypeNewPasswordPrompt' => 'Retype new password',
 	'UI:Login:IncorrectOldPassword' => 'Error: the old password is incorrect',
 	'UI:LogOffMenu' => 'Log off',
-	'UI:LogOff:ThankYou' => 'Thank you for using iTop',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:LogOff:ThankYou' => 'Thank you for using iTop',
+	'UI:LogOff:ThankYou' => 'Thank you for using i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Click here to login again...',
 	'UI:ChangePwdMenu' => 'Change Password...',
 	'UI:Login:PasswordChanged' => 'Password successfully set!',
@@ -1220,7 +1226,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:AccessRO-Users' => 'iTop is read-only for end-users',
 	'UI:ApplicationEnvironment' => 'Application environment: %1$s',
 	'UI:Login:RetypePwdDoesNotMatch' => 'New password and retyped new password do not match!',
-	'UI:Button:Login' => 'Enter iTop',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Button:Login' => 'Enter iTop',
+	'UI:Button:Login' => 'Enter i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'iTop access to this page is restricted. Please, contact an iTop administrator.',
 	'UI:Login:Error:AccessAdmin' => 'Access restricted to people having administrator privileges. Please, contact an iTop administrator.',
 	'UI:Login:Error:WrongOrganizationName' => 'Unknown organization',

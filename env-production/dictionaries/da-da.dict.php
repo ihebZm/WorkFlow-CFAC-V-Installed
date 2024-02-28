@@ -1179,7 +1179,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:SearchValue:CheckAll' => 'Check All',
 	'UI:SearchValue:UncheckAll' => 'Uncheck All',
 	'UI:SelectOne' => '-- Vælg venligst --',
-	'UI:Login:Welcome' => 'Velkommen til iTop!',
+	// ^ START HERE Customization for ICFAC name on itop page 
+	// 'UI:Login:Welcome' => 'Velkommen til iTop!',
+	'UI:Login:Welcome' => 'Velkommen til i-CFAC!',
+	// ^ END HERE Customization for ICFAC name on itop page 
 	'UI:Login:IncorrectLoginPassword' => 'Ukorrekt login/adgangskode, venligst prøv igen.',
 	'UI:Login:IdentifyYourself' => 'Identificer dig før du fortsætter',
 	'UI:Login:UserNamePrompt' => 'Bruger Navn',
@@ -1212,7 +1215,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:Login:RetypeNewPasswordPrompt' => 'Gentag ny adgangskode',
 	'UI:Login:IncorrectOldPassword' => 'Fejl: den gamle adgangskode er forkert',
 	'UI:LogOffMenu' => 'Log ud',
-	'UI:LogOff:ThankYou' => 'Tak for at du brugte iTop',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:LogOff:ThankYou' => 'Tak for at du brugte iTop',
+	'UI:LogOff:ThankYou' => 'Tak for at du brugte i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Klik her for at logge ind igen...',
 	'UI:ChangePwdMenu' => 'Skift Adgangskode...',
 	'UI:Login:PasswordChanged' => 'Adgangskode oprettet med success!',
@@ -1220,7 +1226,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:AccessRO-Users' => 'iTop er skrivebeskyttet for slutbrugere',
 	'UI:ApplicationEnvironment' => 'Applikations miljø: %1$s',
 	'UI:Login:RetypePwdDoesNotMatch' => 'Ny adgangskode og gentaget adgangskode passer ikke sammen!',
-	'UI:Button:Login' => 'Enter iTop',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Button:Login' => 'Enter iTop',
+	'UI:Button:Login' => 'Enter i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'iTop adgang er begrænset. Venligst, kontakt en iTop administrator.',
 	'UI:Login:Error:AccessAdmin' => 'Adgang er begrænset til administratorer. Venligst, kontakt en iTop administrator.',
 	'UI:Login:Error:WrongOrganizationName' => 'Unknown organization',

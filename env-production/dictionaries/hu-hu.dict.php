@@ -1179,7 +1179,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:SearchValue:CheckAll' => 'Check All',
 	'UI:SearchValue:UncheckAll' => 'Uncheck All',
 	'UI:SelectOne' => '-- válasszon ki egyet --',
-	'UI:Login:Welcome' => 'Üdvözli az iTop!',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Login:Welcome' => 'Üdvözli az iTop!',
+	'UI:Login:Welcome' => 'Üdvözli az i-CFAC!',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:IncorrectLoginPassword' => 'Nem megfelelő bejelentkezési név/jelszó, kérjük próbálja újra.',
 	'UI:Login:IdentifyYourself' => 'Folytatás előtt azonosítsa magát',
 	'UI:Login:UserNamePrompt' => 'Felhasználó név',
@@ -1212,7 +1215,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:Login:RetypeNewPasswordPrompt' => 'Új jelszó ismét',
 	'UI:Login:IncorrectOldPassword' => 'Hiba: a jelenlegi jelszó hibás',
 	'UI:LogOffMenu' => 'Kilépés',
-	'UI:LogOff:ThankYou' => 'Köszönjük, hogy az iTop-ot használja!',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:LogOff:ThankYou' => 'Köszönjük, hogy az iTop-ot használja!',
+	'UI:LogOff:ThankYou' => 'Köszönjük, hogy az i-CFAC-ot használja!',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Ismételt bejelentkezéshez kattintson ide',
 	'UI:ChangePwdMenu' => 'Jelszó módosítás...',
 	'UI:Login:PasswordChanged' => 'Jelszó sikeresen beállítva!',
@@ -1220,7 +1226,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:AccessRO-Users' => 'iTop csak olvasás módban a végfelhasználók számára',
 	'UI:ApplicationEnvironment' => 'Application environment: %1$s',
 	'UI:Login:RetypePwdDoesNotMatch' => 'Az új jelszó és ismételten beírt érték nem egyezik!',
-	'UI:Button:Login' => 'Belépés az iTop alkalmazásba',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Button:Login' => 'Belépés az iTop alkalmazásba',
+	'UI:Button:Login' => 'Belépés az i-CFAC alkalmazásba',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'iTop hozzáférés korlátozva. Kérem forduljon az iTop adminisztrátorhoz!',
 	'UI:Login:Error:AccessAdmin' => 'Adminisztrátori hozzáférés korlátozott. Kérem forduljon az iTop adminisztrátorhoz!',
 	'UI:Login:Error:WrongOrganizationName' => 'Unknown organization',

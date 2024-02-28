@@ -19,9 +19,11 @@
  *
  */
 
-
-define('ITOP_APPLICATION', 'iTop');
-define('ITOP_APPLICATION_SHORT', 'iTop');
+// ^ START HERE Customization for ICFAC name on itop page -->
+// define('ITOP_APPLICATION', 'iTop');
+// define('ITOP_APPLICATION_SHORT', 'iTop');
+define('ITOP_APPLICATION', 'i-CFAC');
+define('ITOP_APPLICATION_SHORT', 'i-CFAC');
 
 /**
  * Constant containing the application version

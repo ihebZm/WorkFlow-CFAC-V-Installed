@@ -3073,7 +3073,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:SearchValue:CheckAll' => 'Check All',
 	'UI:SearchValue:UncheckAll' => 'Uncheck All',
 	'UI:SelectOne' => '-- Vyberte jeden --',
-	'UI:Login:Welcome' => 'Vitajte v iTop!',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Login:Welcome' => 'Vitajte v iTop!',
+	'UI:Login:Welcome' => 'Vitajte v i-CFAC!',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:IncorrectLoginPassword' => 'Nesprávne prihlasovacie meno/heslo, prosím skúste znova.',
 	'UI:Login:IdentifyYourself' => 'Identifikujte sa pred pokračovaním',
 	'UI:Login:UserNamePrompt' => 'Užívateľské meno',
@@ -3106,7 +3109,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:Login:RetypeNewPasswordPrompt' => 'Znova zadaj nové heslo',
 	'UI:Login:IncorrectOldPassword' => 'Chyba: staré heslo je nesprávne',
 	'UI:LogOffMenu' => 'Odhlásenie',
-	'UI:LogOff:ThankYou' => 'Ďakujeme za používanie iTop',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:LogOff:ThankYou' => 'Ďakujeme za používanie iTop',
+	'UI:LogOff:ThankYou' => 'Ďakujeme za používanie i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Kliknite sem pre nové prihlásenie...',
 	'UI:ChangePwdMenu' => 'Zmeniť heslo...',
 	'UI:Login:PasswordChanged' => 'Heslo úspešne nastavené !',
@@ -3114,7 +3120,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:AccessRO-Users' => 'iTop je iba na čítanie pre uživatelov',
 	'UI:ApplicationEnvironment' => 'Aplikačné prostredie: %1$s',
 	'UI:Login:RetypePwdDoesNotMatch' => 'Nové heslo a znova zadané nové heslo sa nezhodujú !',
-	'UI:Button:Login' => 'Vstup do iTop',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Button:Login' => 'Vstup do iTop',
+	'UI:Button:Login' => 'Vstup do i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'Prístup do iTopu je obmedzený. Kontaktujte prosím iTop administrátora.',
 	'UI:Login:Error:AccessAdmin' => 'Prístup je vyhradený len pre ľudí, ktorí majú oprávnenia od administrátora. Kontaktujte prosím iTop administrátora.',
 	'UI:Login:Error:WrongOrganizationName' => 'Unknown organization',

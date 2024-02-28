@@ -1179,7 +1179,10 @@ Esperamos distrute de esta versión tanto como nosotros la imaginamos y creamos.
 	'UI:SearchValue:CheckAll' => 'Seleccionar Todo',
 	'UI:SearchValue:UncheckAll' => 'Deseleccionar Todo',
 	'UI:SelectOne' => '-- Seleccione uno --',
-	'UI:Login:Welcome' => 'Bienvenido a iTop',
+	// ^ START HERE Customization for ICFAC name on itop page 
+	// 'UI:Login:Welcome' => 'Bienvenido a iTop',
+	'UI:Login:Welcome' => 'Bienvenido a i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page 
 	'UI:Login:IncorrectLoginPassword' => 'Usuario/Contraseña incorrecto, por favor intente otra vez.',
 	'UI:Login:IdentifyYourself' => 'Identifiquese antes de continuar',
 	'UI:Login:UserNamePrompt' => 'Usuario   ',
@@ -1212,7 +1215,10 @@ Esperamos distrute de esta versión tanto como nosotros la imaginamos y creamos.
 	'UI:Login:RetypeNewPasswordPrompt' => 'Confirme Contraseña Nueva',
 	'UI:Login:IncorrectOldPassword' => 'Error: la Contraseña Anterior es Incorrecta',
 	'UI:LogOffMenu' => 'Cerrar Sesión',
-	'UI:LogOff:ThankYou' => 'Gracias por usar iTop',
+	// ^ START HERE Customization for ICFAC name on itop page
+	//'UI:LogOff:ThankYou' => 'Gracias por usar iTop',
+	'UI:LogOff:ThankYou' => 'Gracias por usar i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Click aquí para conectarse nuevamente',
 	'UI:ChangePwdMenu' => 'Cambiar Contraseña',
 	'UI:Login:PasswordChanged' => '¡Contraseña Exitosamente Cambiada!',
@@ -1220,7 +1226,10 @@ Esperamos distrute de esta versión tanto como nosotros la imaginamos y creamos.
 	'UI:AccessRO-Users' => 'iTop está en modo de sólo lectura para usuarios',
 	'UI:ApplicationEnvironment' => 'Ambiente: %1$s',
 	'UI:Login:RetypePwdDoesNotMatch' => '¡La Nueva Contraseña y su Confirmación No Coinciden!',
-	'UI:Button:Login' => 'Entrar',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Button:Login' => 'Entrar',
+	'UI:Button:Login' => 'Entrar i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'El acceso a iTop está restringido. Por favor contacte al Administrador de iTop.',
 	'UI:Login:Error:AccessAdmin' => 'Acceso restringido a usuarios con privilegio de administrador. Por favor contacte al Administrador de iTop.',
 	'UI:Login:Error:WrongOrganizationName' => 'Organización desconocida',

@@ -1179,7 +1179,10 @@ Dict::SetEntries('RU RU', array(
 	'UI:SearchValue:CheckAll' => 'Выбрать все',
 	'UI:SearchValue:UncheckAll' => 'Сбросить',
 	'UI:SelectOne' => '-- выбрать --',
-	'UI:Login:Welcome' => 'Добро пожаловать в iTop!',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Login:Welcome' => 'Добро пожаловать в iTop!',
+	'UI:Login:Welcome' => 'Добро пожаловать в i-CFAC!',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:IncorrectLoginPassword' => 'Неправильный логин/пароль. Пожалуйста, попробуйте еще раз.',
 	'UI:Login:IdentifyYourself' => 'Пожалуйста, представьтесь',
 	'UI:Login:UserNamePrompt' => 'Имя пользователя',
@@ -1212,7 +1215,10 @@ Dict::SetEntries('RU RU', array(
 	'UI:Login:RetypeNewPasswordPrompt' => 'Повторите новый пароль',
 	'UI:Login:IncorrectOldPassword' => 'Ошибка: старый пароль неверный',
 	'UI:LogOffMenu' => 'Выход',
-	'UI:LogOff:ThankYou' => 'Спасибо за использование iTop',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:LogOff:ThankYou' => 'Спасибо за использование iTop',
+	'UI:LogOff:ThankYou' => 'Спасибо за использование i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Нажмите здесь, чтобы снова войти...',
 	'UI:ChangePwdMenu' => 'Изменить пароль...',
 	'UI:Login:PasswordChanged' => 'Пароль успешно изменён!',
@@ -1220,7 +1226,10 @@ Dict::SetEntries('RU RU', array(
 	'UI:AccessRO-Users' => 'Только чтение для конечных пользователей',
 	'UI:ApplicationEnvironment' => 'Application environment: %1$s',
 	'UI:Login:RetypePwdDoesNotMatch' => 'Пароли не совпадают',
-	'UI:Button:Login' => 'Войти',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Button:Login' => 'Войти',
+	'UI:Button:Login' => 'Войти i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'Доступ к iTop ограничен. Пожалуйста, свяжитесь с администратором iTop.',
 	'UI:Login:Error:AccessAdmin' => 'Доступ ограничен для лиц с административными привилегиями. Пожалуйста, свяжитесь с администратором iTop.',
 	'UI:Login:Error:WrongOrganizationName' => 'Неизвестная организация',

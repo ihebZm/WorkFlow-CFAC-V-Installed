@@ -1179,7 +1179,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:SearchValue:CheckAll' => 'Check All',
 	'UI:SearchValue:UncheckAll' => 'Uncheck All',
 	'UI:SelectOne' => '-- 選んでください --',
-	'UI:Login:Welcome' => 'iTopへようこそ',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Login:Welcome' => 'iTopへようこそ',
+	'UI:Login:Welcome' => 'i-CFACへようこそ',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:IncorrectLoginPassword' => 'ログイン/パスワードが正しくありません。再度入力ください。',
 	'UI:Login:IdentifyYourself' => '続けて作業を行う前に認証を受けてください。',
 	'UI:Login:UserNamePrompt' => 'ユーザー名',
@@ -1212,7 +1215,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:Login:RetypeNewPasswordPrompt' => '新しいパスワードを再度入力してください。',
 	'UI:Login:IncorrectOldPassword' => 'エラー：既存パスワードが正しくありません。',
 	'UI:LogOffMenu' => 'ログオフ',
-	'UI:LogOff:ThankYou' => 'iTopをご利用いただき、ありがとうございます。',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:LogOff:ThankYou' => 'iTopをご利用いただき、ありがとうございます。',
+	'UI:LogOff:ThankYou' => 'i-CFACをご利用いただき、ありがとうございます。',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => '再度ログインするにはここをクリックしてください...',
 	'UI:ChangePwdMenu' => 'パスワードを変更する...',
 	'UI:Login:PasswordChanged' => 'パスワードは変更されました。',
@@ -1220,7 +1226,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:AccessRO-Users' => 'エンドユーザの方はiTopは参照専用です。',
 	'UI:ApplicationEnvironment' => 'アプリケーション環境: %1$s',
 	'UI:Login:RetypePwdDoesNotMatch' => '2度入力された新しいパスワードが一致しません!',
-	'UI:Button:Login' => 'iTopへ入る',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Button:Login' => 'iTopへ入る',
+	'UI:Button:Login' => 'i-CFACへ入る',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'iTopへのアクセスは制限されています。iTop管理者に問い合わせしてください。',
 	'UI:Login:Error:AccessAdmin' => '管理者権限をもつユーザにアクセスが制限されています。iTop管理者に問い合わせしてください。',
 	'UI:Login:Error:WrongOrganizationName' => 'Unknown organization',

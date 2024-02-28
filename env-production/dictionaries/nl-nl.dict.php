@@ -1179,7 +1179,10 @@ We hopen dat je even hard van deze versie geniet als dat we zelf ervan hebben ge
 	'UI:SearchValue:CheckAll' => 'Vink alles aan',
 	'UI:SearchValue:UncheckAll' => 'Vink alles uit',
 	'UI:SelectOne' => '-- selecteer --',
-	'UI:Login:Welcome' => 'Welkom in iTop!',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Login:Welcome' => 'Welkom in iTop!',
+	'UI:Login:Welcome' => 'Welkom in i-CFAC!',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:IncorrectLoginPassword' => 'Ongeldige gebruikersnaam of wachtwoord, probeer opnieuw.',
 	'UI:Login:IdentifyYourself' => 'Identificeer jezelf voordat je verder gaat',
 	'UI:Login:UserNamePrompt' => 'Gebruikersnaam',
@@ -1212,7 +1215,10 @@ We hopen dat je even hard van deze versie geniet als dat we zelf ervan hebben ge
 	'UI:Login:RetypeNewPasswordPrompt' => 'Herhaal nieuwe wachtwoord',
 	'UI:Login:IncorrectOldPassword' => 'Fout: het oude wachtwoord is incorrect',
 	'UI:LogOffMenu' => 'Log uit',
-	'UI:LogOff:ThankYou' => 'Bedankt voor het gebruiken van iTop',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:LogOff:ThankYou' => 'Bedankt voor het gebruiken van iTop',
+	'UI:LogOff:ThankYou' => 'Bedankt voor het gebruiken van i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Klik hier om in te loggen',
 	'UI:ChangePwdMenu' => 'Verander wachtwoord',
 	'UI:Login:PasswordChanged' => 'Wachtwoord met succes aangepast',
@@ -1220,7 +1226,10 @@ We hopen dat je even hard van deze versie geniet als dat we zelf ervan hebben ge
 	'UI:AccessRO-Users' => 'iTop is alleen-lezen voor eindgebruikers',
 	'UI:ApplicationEnvironment' => 'Omgeving van de applicatie: %1$s',
 	'UI:Login:RetypePwdDoesNotMatch' => 'Het nieuwe wachtwoord en de herhaling van het nieuwe wachtwoord komen niet overeen',
-	'UI:Button:Login' => 'Ga naar iTop',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Button:Login' => 'Ga naar iTop',
+	'UI:Button:Login' => 'Ga naar i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'Geen toegang tot iTop. Neem contact op met een iTop-beheerder.',
 	'UI:Login:Error:AccessAdmin' => 'Alleen toegankelijk voor mensen met beheerdersrechten. Neem contact op met een iTop-beheerder',
 	'UI:Login:Error:WrongOrganizationName' => 'Onbekende organisatie',

@@ -1179,7 +1179,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:SearchValue:CheckAll' => 'Hepsini işaretleyin',
 	'UI:SearchValue:UncheckAll' => 'Hepsinin işaretini kaldırın',
 	'UI:SelectOne' => '-- Birini seçiniz --',
-	'UI:Login:Welcome' => 'iTop\'a Hoşgeldiniz!',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Login:Welcome' => 'iTop\'a Hoşgeldiniz!',
+	'UI:Login:Welcome' => 'i-CFAC\'a Hoşgeldiniz!',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:IncorrectLoginPassword' => 'Hatalı kullanıcı/şifre tekrar deneyiniz.',
 	'UI:Login:IdentifyYourself' => 'Devam etmeden önce kendinizi tanıtınız',
 	'UI:Login:UserNamePrompt' => 'Kullanıcı Adı',
@@ -1212,7 +1215,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:Login:RetypeNewPasswordPrompt' => 'Yeni şifre tekrar',
 	'UI:Login:IncorrectOldPassword' => 'Hata: mevcut şifre hatalı',
 	'UI:LogOffMenu' => 'Çıkış',
-	'UI:LogOff:ThankYou' => 'iTop Kullanıdığınız için teşekkürler',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:LogOff:ThankYou' => 'iTop Kullanıdığınız için teşekkürler',
+	'UI:LogOff:ThankYou' => 'i-CFAC Kullanıdığınız için teşekkürler',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Tekrar bağlanmak için tıklayınız...',
 	'UI:ChangePwdMenu' => 'Şifre değiştir...',
 	'UI:Login:PasswordChanged' => 'Şifre başarıyla ayarlandı!',
@@ -1220,7 +1226,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:AccessRO-Users' => 'iTop sadece son kullanıcılar için okunurdur',
 	'UI:ApplicationEnvironment' => 'Uygulama Ortamı: %1$s',
 	'UI:Login:RetypePwdDoesNotMatch' => 'Yeni şifre eşlenmedi !',
-	'UI:Button:Login' => 'iTop\'a Giriş',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Button:Login' => 'iTop\'a Giriş',
+	'UI:Button:Login' => 'i-CFAC\'a Giriş',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'iTop erişim sınırlandırıldı. Sistem yöneticisi ile irtibata geçiniz',
 	'UI:Login:Error:AccessAdmin' => 'Erişim sistem yönetci hesaplaları ile mümkün. Sistem yöneticisi ile irtibata geçiniz.',
 	'UI:Login:Error:WrongOrganizationName' => 'Unknown organization',

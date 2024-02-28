@@ -1179,7 +1179,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:SearchValue:CheckAll' => 'Vybrat vše',
 	'UI:SearchValue:UncheckAll' => 'Zrušit výběr',
 	'UI:SelectOne' => '-- zvolte jednu z možností --',
-	'UI:Login:Welcome' => 'Vítejte v iTop!',
+	// ^ START HERE Customization for ICFAC name on itop page 
+	// 'UI:Login:Welcome' => 'Vítejte v iTop!',
+	'UI:Login:Welcome' => 'Vítejte v i-CFAC!',
+	// ^ END HERE Customization for ICFAC name on itop page 
 	'UI:Login:IncorrectLoginPassword' => 'Nesprávné uživatelské jméno nebo heslo. Zkuste to prosím znovu.',
 	'UI:Login:IdentifyYourself' => 'Před pokračováním se prosím identifikujte.',
 	'UI:Login:UserNamePrompt' => 'Uživatelské jméno',
@@ -1212,7 +1215,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:Login:RetypeNewPasswordPrompt' => 'Znovu nové heslo',
 	'UI:Login:IncorrectOldPassword' => 'Chyba: původní heslo je nesprávné',
 	'UI:LogOffMenu' => 'Odhlásit',
-	'UI:LogOff:ThankYou' => 'Děkujeme za užívání iTop',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:LogOff:ThankYou' => 'Děkujeme za užívání iTop',
+	'UI:LogOff:ThankYou' => 'Děkujeme za užívání i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Klikněte zde pro nové přihlášení...',
 	'UI:ChangePwdMenu' => 'Změnit heslo',
 	'UI:Login:PasswordChanged' => 'Heslo nastaveno úspěšně!',
@@ -1220,7 +1226,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:AccessRO-Users' => 'iTop je pouze ke čtení pro koncové uživatele',
 	'UI:ApplicationEnvironment' => 'Aplikační prostředí: %1$s',
 	'UI:Login:RetypePwdDoesNotMatch' => 'Nová hesla se neshodují!',
-	'UI:Button:Login' => 'Přihlásit',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Button:Login' => 'Přihlásit',
+	'UI:Button:Login' => 'Přihlásit i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'Přístup je omezen. Kontaktujte administrátora.',
 	'UI:Login:Error:AccessAdmin' => 'Přístup vyhrazen osobám s administrátorskými právy. Kontaktujte administrátora.',
 	'UI:Login:Error:WrongOrganizationName' => 'Unknown organization',

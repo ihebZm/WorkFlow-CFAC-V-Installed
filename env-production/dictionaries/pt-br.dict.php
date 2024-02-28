@@ -1180,7 +1180,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:SearchValue:CheckAll' => 'Marcar todos',
 	'UI:SearchValue:UncheckAll' => 'Desmarcar todos',
 	'UI:SelectOne' => '-- selecione um --',
-	'UI:Login:Welcome' => 'Bem-vindo ao iTop!',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Login:Welcome' => 'Bem-vindo ao iTop!',
+	'UI:Login:Welcome' => 'Bem-vindo ao i-CFAC!',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:IncorrectLoginPassword' => 'Usuário/senha incorreto, tente novamente.',
 	'UI:Login:IdentifyYourself' => 'Identifique-se antes continuar',
 	'UI:Login:UserNamePrompt' => 'Usuário',
@@ -1213,7 +1216,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:Login:RetypeNewPasswordPrompt' => 'Repetir nova senha',
 	'UI:Login:IncorrectOldPassword' => 'Erro: senha antiga incorreta',
 	'UI:LogOffMenu' => 'Sair',
-	'UI:LogOff:ThankYou' => 'Obrigado por usar o sistema',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:LogOff:ThankYou' => 'Obrigado por usar o sistema',
+	'UI:LogOff:ThankYou' => 'Obrigado por usar i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Clique aqui para entrar novamente...',
 	'UI:ChangePwdMenu' => 'Alterar senha...',
 	'UI:Login:PasswordChanged' => 'Senha alterada com sucesso',
@@ -1221,7 +1227,10 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:AccessRO-Users' => 'Somente leitura para usuário final',
 	'UI:ApplicationEnvironment' => 'Ambiente da aplicação: %1$s',
 	'UI:Login:RetypePwdDoesNotMatch' => 'Nova senha e Repetir nova senha são diferentes. Tente novamente!',
-	'UI:Button:Login' => 'Entrar iTop',
+	// ^ START HERE Customization for ICFAC name on itop page
+	// 'UI:Button:Login' => 'Entrar iTop',
+	'UI:Button:Login' => 'Entrar i-CFAC',
+	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'Acesso restrito. Por favor, contacte o administrador.',
 	'UI:Login:Error:AccessAdmin' => 'Acesso restrito somente para privilégios administrativo. Por favor, contacte o administrador.',
 	'UI:Login:Error:WrongOrganizationName' => 'Unknown organization',
