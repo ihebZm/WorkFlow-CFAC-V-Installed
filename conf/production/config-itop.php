@@ -10,8 +10,8 @@
 $MySettings = array(
 
 	// access_message: Message displayed to the users when there is any access restriction
-	//	default: 'iTop is temporarily frozen, please wait... (the admin team)'
-	'access_message' => 'iTop is temporarily frozen, please wait... (the admin team)',
+	//      default: 'iTop is temporarily frozen, please wait... (the admin team)'
+	'access_message' => 'Nous vous informons que l application est actuellement en MAINTENANCE. Pendant cette période, vous ne pourrez pas effectuer de modifications, mais sachant que vous pourrez naviguer sur l application. La durée estimée de la maintenance jusqu a 20:00. Si vous effectuez des traitements urgents sur l application, veuillez contacter le département IT de CFAC Group',
 
 	// access_mode: Access mode: ACCESS_READONLY = 0, ACCESS_ADMIN_WRITE = 2, ACCESS_FULL = 3
 	//	default: 3
@@ -84,7 +84,7 @@ $MySettings = array(
 */
 	'db_host' => 'localhost',
 
-	'db_name' => 'itopcfac_02_02_2023',
+	'db_name' => 'itopcfac_29_02_2024',
 
 	'db_pwd' => '',
 
