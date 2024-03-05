@@ -53,6 +53,7 @@ class ormPassword
 	{
 		$iHashAlgo = MetaModel::GetConfig()->GetPasswordHashAlgo();
 		$this->m_sHashed = password_hash($sClearTextPassword, $iHashAlgo);
+		// comment this function if erreur on adding users acompte
 	}
 
 	/**
