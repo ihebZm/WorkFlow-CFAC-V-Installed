@@ -1,3 +1,6 @@
 
-#production
+# exclude everything production only
 data/cache-production/*
+
+# exception to the rule
+!data/cache-productio/.gitkeep 
