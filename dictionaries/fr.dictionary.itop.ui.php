@@ -326,10 +326,10 @@ Dict::Add('FR FR', 'French', 'Français', array(
 	'BooleanLabel:no' => 'non',
 	'UI:Login:Title' => ITOP_APPLICATION_SHORT.' login',
 	'Menu:WelcomeMenu' => 'Bienvenue',// Duplicated into itop-welcome-itil (will be removed from here...)
-	'Menu:WelcomeMenu+' => 'Bienvenue dans '.ITOP_APPLICATION_SHORT,// Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:WelcomeMenu+' => 'Bienvenue sur '.ITOP_APPLICATION_SHORT,// Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:WelcomeMenuPage' => 'Bienvenue',// Duplicated into itop-welcome-itil (will be removed from here...)
-	'Menu:WelcomeMenuPage+' => 'Bienvenue dans '.ITOP_APPLICATION_SHORT,// Duplicated into itop-welcome-itil (will be removed from here...)
-	'UI:WelcomeMenu:Title' => 'Bienvenue dans '.ITOP_APPLICATION_SHORT,
+	'Menu:WelcomeMenuPage+' => 'Bienvenue sur '.ITOP_APPLICATION_SHORT,// Duplicated into itop-welcome-itil (will be removed from here...)
+	'UI:WelcomeMenu:Title' => 'Bienvenue sur '.ITOP_APPLICATION_SHORT,
 
 	'UI:WelcomeMenu:LeftBlock' => '<p>'.ITOP_APPLICATION_SHORT.' est un portail opérationnel complet et libre pour gérer votre SI.</p>
 <ul>il contient:
@@ -520,7 +520,7 @@ Nous espérons que vous aimerez cette version autant que nous avons eu du plaisi
 	'UI:SearchValue:CheckAll' => 'Cocher',
 	'UI:SearchValue:UncheckAll' => 'Décocher',
 	'UI:SelectOne' => '-- choisir une valeur --',
-	'UI:Login:Welcome' => 'Bienvenue dans '.ITOP_APPLICATION_SHORT.'!',
+	'UI:Login:Welcome' => 'Bienvenue sur '.ITOP_APPLICATION_SHORT.'!',
 	'UI:Login:IncorrectLoginPassword' => 'Mot de passe ou identifiant incorrect.',
 	'UI:Login:IdentifyYourself' => 'Merci de vous identifier',
 	'UI:Login:UserNamePrompt' => 'Identifiant',
@@ -833,7 +833,7 @@ Nous espérons que vous aimerez cette version autant que nous avons eu du plaisi
 	'UI:Delete:PleaseDoTheManualOperations' => 'Vous devez effectuer les opération manuelles listées ci-dessus avant de pourvoir supprimer cet objet.',
 	'UI:Delect:Confirm_Object' => 'Confirmez que vous voulez bien supprimer %1$s.',
 	'UI:Delect:Confirm_Count_ObjectsOf_Class' => 'Confirmez que vous voulez bien supprimer les %1$d objets de type %2$s ci-dessous.',
-	'UI:WelcomeToITop' => 'Bienvenue dans '.ITOP_APPLICATION_SHORT,
+	'UI:WelcomeToITop' => 'Bienvenue sur '.ITOP_APPLICATION_SHORT,
 	'UI:DetailsPageTitle' => ITOP_APPLICATION_SHORT.' - %2$s - Détails de %1$s',
 	'UI:ErrorPageTitle' => ITOP_APPLICATION_SHORT.' - Erreur',
 	'UI:ObjectDoesNotExist' => 'Désolé cet objet n\'existe pas (ou vous n\'êtes pas autorisé à l\'afficher).',
@@ -1631,9 +1631,9 @@ Dict::Add('FR FR', 'French', 'Français', array(
 	'Menu:DataSources' => 'Synchronisation',
 	'Menu:DataSources+' => '',
 	'Menu:WelcomeMenu' => 'Bienvenue',
-	'Menu:WelcomeMenu+' => 'Bienvenue dans '.ITOP_APPLICATION_SHORT,
+	'Menu:WelcomeMenu+' => 'Bienvenue sur '.ITOP_APPLICATION_SHORT,
 	'Menu:WelcomeMenuPage' => 'Bienvenue',
-	'Menu:WelcomeMenuPage+' => 'Bienvenue dans '.ITOP_APPLICATION_SHORT,
+	'Menu:WelcomeMenuPage+' => 'Bienvenue sur '.ITOP_APPLICATION_SHORT,
 	'Menu:AdminTools' => 'Administration',
 	'Menu:AdminTools+' => 'Outils d\'administration',
 	'Menu:AdminTools?' => 'Ces outils sont accessibles uniquement aux utilisateurs possédant le profil Administrateur.',

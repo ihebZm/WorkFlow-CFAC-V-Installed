@@ -453,3 +453,14 @@ array (
 2024-03-06 12:35:55 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
 2024-03-06 12:36:17 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
 2024-03-06 12:36:32 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2024-03-15 11:44:34 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2024-03-15 11:44:51 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2024-03-15 12:18:51 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2024-03-15 12:46:53 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2024-03-15 16:16:13 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2024-03-15 16:17:19 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2024-03-15 16:18:01 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2024-03-15 16:18:32 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2024-03-15 16:18:34 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2024-03-15 16:19:31 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||
+2024-03-15 16:24:18 | Error   | 1     | Module itop-object-copy - invalid rule #MailInboxStandardToMailInboxOAuth - dest_class "MailInboxOAuth" is not a valid class | IssueLog |||

@@ -1181,7 +1181,7 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:SelectOne' => '-- Vælg venligst --',
 	// ^ START HERE Customization for ICFAC name on itop page 
 	// 'UI:Login:Welcome' => 'Velkommen til iTop!',
-	'UI:Login:Welcome' => 'Velkommen til i-CFAC!',
+	'UI:Login:Welcome' => 'Velkommen til My-CFAC!',
 	// ^ END HERE Customization for ICFAC name on itop page 
 	'UI:Login:IncorrectLoginPassword' => 'Ukorrekt login/adgangskode, venligst prøv igen.',
 	'UI:Login:IdentifyYourself' => 'Identificer dig før du fortsætter',
@@ -1217,7 +1217,7 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:LogOffMenu' => 'Log ud',
 	// ^ START HERE Customization for ICFAC name on itop page
 	// 'UI:LogOff:ThankYou' => 'Tak for at du brugte iTop',
-	'UI:LogOff:ThankYou' => 'Tak for at du brugte i-CFAC',
+	'UI:LogOff:ThankYou' => 'Tak for at du brugte My-CFAC',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Klik her for at logge ind igen...',
 	'UI:ChangePwdMenu' => 'Skift Adgangskode...',
@@ -1228,7 +1228,7 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:Login:RetypePwdDoesNotMatch' => 'Ny adgangskode og gentaget adgangskode passer ikke sammen!',
 	// ^ START HERE Customization for ICFAC name on itop page
 	// 'UI:Button:Login' => 'Enter iTop',
-	'UI:Button:Login' => 'Enter i-CFAC',
+	'UI:Button:Login' => 'Enter My-CFAC',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'iTop adgang er begrænset. Venligst, kontakt en iTop administrator.',
 	'UI:Login:Error:AccessAdmin' => 'Adgang er begrænset til administratorer. Venligst, kontakt en iTop administrator.',
@@ -4404,8 +4404,8 @@ or ask your iTop administrator if the iTop server disk is full.',
 	'Class:Incident/Attribute:resolution_code+' => '',
 	'Class:Incident/Attribute:resolution_code/Value:a valider' => 'To Validate',
 	'Class:Incident/Attribute:resolution_code/Value:a valider+' => '',
-	'Class:Incident/Attribute:resolution_code/Value:en attente' => 'On Hold',
-	'Class:Incident/Attribute:resolution_code/Value:en attente+' => '',
+	'Class:Incident/Attribute:resolution_code/Value:en veille' => 'Standby',
+	'Class:Incident/Attribute:resolution_code/Value:en veille+' => '',
 	'Class:Incident/Attribute:resolution_code/Value:a refaire' => 'To Redo',
 	'Class:Incident/Attribute:resolution_code/Value:a refaire+' => '',
 	'Class:Incident/Attribute:resolution_code/Value:a cloturer' => 'To Close',
@@ -4837,8 +4837,8 @@ or ask your iTop administrator if the iTop server disk is full.',
 	'Class:UserRequest/Attribute:resolution_code+' => '',
 	'Class:UserRequest/Attribute:resolution_code/Value:a valider' => 'To Validate',
 	'Class:UserRequest/Attribute:resolution_code/Value:a valider+' => '',
-	'Class:UserRequest/Attribute:resolution_code/Value:en attente' => 'On Hold',
-	'Class:UserRequest/Attribute:resolution_code/Value:en attente+' => '',
+	'Class:UserRequest/Attribute:resolution_code/Value:en veille' => 'Standby',
+	'Class:UserRequest/Attribute:resolution_code/Value:en veille+' => '',
 	'Class:UserRequest/Attribute:resolution_code/Value:a refaire' => 'To Redo',
 	'Class:UserRequest/Attribute:resolution_code/Value:a refaire+' => '',
 	'Class:UserRequest/Attribute:resolution_code/Value:a cloturer' => 'To Close',

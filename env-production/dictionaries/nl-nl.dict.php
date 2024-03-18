@@ -1181,7 +1181,7 @@ We hopen dat je even hard van deze versie geniet als dat we zelf ervan hebben ge
 	'UI:SelectOne' => '-- selecteer --',
 	// ^ START HERE Customization for ICFAC name on itop page
 	// 'UI:Login:Welcome' => 'Welkom in iTop!',
-	'UI:Login:Welcome' => 'Welkom in i-CFAC!',
+	'UI:Login:Welcome' => 'Welkom in My-CFAC!',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:IncorrectLoginPassword' => 'Ongeldige gebruikersnaam of wachtwoord, probeer opnieuw.',
 	'UI:Login:IdentifyYourself' => 'Identificeer jezelf voordat je verder gaat',
@@ -1217,7 +1217,7 @@ We hopen dat je even hard van deze versie geniet als dat we zelf ervan hebben ge
 	'UI:LogOffMenu' => 'Log uit',
 	// ^ START HERE Customization for ICFAC name on itop page
 	// 'UI:LogOff:ThankYou' => 'Bedankt voor het gebruiken van iTop',
-	'UI:LogOff:ThankYou' => 'Bedankt voor het gebruiken van i-CFAC',
+	'UI:LogOff:ThankYou' => 'Bedankt voor het gebruiken van My-CFAC',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Klik hier om in te loggen',
 	'UI:ChangePwdMenu' => 'Verander wachtwoord',
@@ -1228,7 +1228,7 @@ We hopen dat je even hard van deze versie geniet als dat we zelf ervan hebben ge
 	'UI:Login:RetypePwdDoesNotMatch' => 'Het nieuwe wachtwoord en de herhaling van het nieuwe wachtwoord komen niet overeen',
 	// ^ START HERE Customization for ICFAC name on itop page
 	// 'UI:Button:Login' => 'Ga naar iTop',
-	'UI:Button:Login' => 'Ga naar i-CFAC',
+	'UI:Button:Login' => 'Ga naar My-CFAC',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'Geen toegang tot iTop. Neem contact op met een iTop-beheerder.',
 	'UI:Login:Error:AccessAdmin' => 'Alleen toegankelijk voor mensen met beheerdersrechten. Neem contact op met een iTop-beheerder',
@@ -4405,8 +4405,8 @@ of vraag de iTop administrator om de opslagruimte van de iTop-server na te kijke
 	'Class:Incident/Attribute:resolution_code+' => '',
 	'Class:Incident/Attribute:resolution_code/Value:a valider' => 'To Validate',
 	'Class:Incident/Attribute:resolution_code/Value:a valider+' => 'To Validate',
-	'Class:Incident/Attribute:resolution_code/Value:en attente' => 'On Hold',
-	'Class:Incident/Attribute:resolution_code/Value:en attente+' => 'On Hold',
+	'Class:Incident/Attribute:resolution_code/Value:en veille' => 'Standby',
+	'Class:Incident/Attribute:resolution_code/Value:en veille+' => 'Standby',
 	'Class:Incident/Attribute:resolution_code/Value:a refaire' => 'To Redo',
 	'Class:Incident/Attribute:resolution_code/Value:a refaire+' => 'To Redo',
 	'Class:Incident/Attribute:resolution_code/Value:a cloturer' => 'To Close',
@@ -4838,8 +4838,8 @@ of vraag de iTop administrator om de opslagruimte van de iTop-server na te kijke
 	'Class:UserRequest/Attribute:resolution_code+' => '',
 	'Class:UserRequest/Attribute:resolution_code/Value:a valider' => 'To Validate',
 	'Class:UserRequest/Attribute:resolution_code/Value:a valider+' => 'To Validate',
-	'Class:UserRequest/Attribute:resolution_code/Value:en attente' => 'On Hold',
-	'Class:UserRequest/Attribute:resolution_code/Value:en attente+' => 'On Hold',
+	'Class:UserRequest/Attribute:resolution_code/Value:en veille' => 'Standby',
+	'Class:UserRequest/Attribute:resolution_code/Value:en veille+' => 'Standby',
 	'Class:UserRequest/Attribute:resolution_code/Value:a refaire' => 'To Redo',
 	'Class:UserRequest/Attribute:resolution_code/Value:a refaire+' => 'To Redo',
 	'Class:UserRequest/Attribute:resolution_code/Value:a cloturer' => 'To Close',

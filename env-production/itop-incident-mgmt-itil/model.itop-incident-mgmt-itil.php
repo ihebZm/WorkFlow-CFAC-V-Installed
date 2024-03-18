@@ -60,7 +60,7 @@ class Incident extends Ticket
 		MetaModel::Init_AddAttribute(new AttributeSubItem("sla_ttr_over", array("target_attcode"=>'ttr', "item_code"=>'100_overrun', "always_load_in_tables"=>false)));
 		MetaModel::Init_AddAttribute(new AttributeDuration("time_spent", array("allowed_values"=>null, "sql"=>'time_spent', "default_value"=>'', "is_null_allowed"=>true, "depends_on"=>array(), "always_load_in_tables"=>false)));
 		// ^ START HERE Customization CFAC resolution de demande
-		MetaModel::Init_AddAttribute(new AttributeEnum("resolution_code", array("allowed_values"=>new ValueSetEnum("a valider,en attente,a refaire,a cloturer"), "display_style"=>'list', "sql"=>'resolution_code', "default_value"=>'a valider', "is_null_allowed"=>true, "depends_on"=>array(), "always_load_in_tables"=>false)));
+		MetaModel::Init_AddAttribute(new AttributeEnum("resolution_code", array("allowed_values"=>new ValueSetEnum("a valider,en veille,a refaire,a cloturer"), "display_style"=>'list', "sql"=>'resolution_code', "default_value"=>'a valider', "is_null_allowed"=>true, "depends_on"=>array(), "always_load_in_tables"=>false)));
 		//MetaModel::Init_AddAttribute(new AttributeEnum("resolution_code", array("allowed_values"=>new ValueSetEnum("assistance,other,software patch,training,hardware repair,system update,bug fixed"), "display_style"=>'list', "sql"=>'resolution_code', "default_value"=>'assistance', "is_null_allowed"=>true, "depends_on"=>array(), "always_load_in_tables"=>false)));
 		// ^ END HERE Customization CFAC resolution de demande
 		MetaModel::Init_AddAttribute(new AttributeText("solution", array("allowed_values"=>null, "sql"=>'solution', "default_value"=>'', "is_null_allowed"=>true, "depends_on"=>array(), "always_load_in_tables"=>false)));

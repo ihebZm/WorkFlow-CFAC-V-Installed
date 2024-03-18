@@ -1816,8 +1816,8 @@ Operatori:<br/>
 	'Class:UserRequest/Attribute:resolution_code+' => '',
 	'Class:UserRequest/Attribute:resolution_code/Value:a valider' => 'To Validate',
 	'Class:UserRequest/Attribute:resolution_code/Value:a valider+' => '',
-	'Class:UserRequest/Attribute:resolution_code/Value:en attente' => 'On Hold',
-	'Class:UserRequest/Attribute:resolution_code/Value:en attente+' => '',
+	'Class:UserRequest/Attribute:resolution_code/Value:en veille' => 'Standby',
+	'Class:UserRequest/Attribute:resolution_code/Value:en veille+' => '',
 	'Class:UserRequest/Attribute:resolution_code/Value:a refaire' => 'To Redo',
 	'Class:UserRequest/Attribute:resolution_code/Value:a refaire+' => '',
 	'Class:UserRequest/Attribute:resolution_code/Value:a cloturer' => 'To Close',
@@ -3075,7 +3075,7 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:SelectOne' => '-- Vyberte jeden --',
 	// ^ START HERE Customization for ICFAC name on itop page
 	// 'UI:Login:Welcome' => 'Vitajte v iTop!',
-	'UI:Login:Welcome' => 'Vitajte v i-CFAC!',
+	'UI:Login:Welcome' => 'Vitajte v My-CFAC!',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:IncorrectLoginPassword' => 'Nesprávne prihlasovacie meno/heslo, prosím skúste znova.',
 	'UI:Login:IdentifyYourself' => 'Identifikujte sa pred pokračovaním',
@@ -3111,7 +3111,7 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:LogOffMenu' => 'Odhlásenie',
 	// ^ START HERE Customization for ICFAC name on itop page
 	// 'UI:LogOff:ThankYou' => 'Ďakujeme za používanie iTop',
-	'UI:LogOff:ThankYou' => 'Ďakujeme za používanie i-CFAC',
+	'UI:LogOff:ThankYou' => 'Ďakujeme za používanie My-CFAC',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Kliknite sem pre nové prihlásenie...',
 	'UI:ChangePwdMenu' => 'Zmeniť heslo...',
@@ -3122,7 +3122,7 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:Login:RetypePwdDoesNotMatch' => 'Nové heslo a znova zadané nové heslo sa nezhodujú !',
 	// ^ START HERE Customization for ICFAC name on itop page
 	// 'UI:Button:Login' => 'Vstup do iTop',
-	'UI:Button:Login' => 'Vstup do i-CFAC',
+	'UI:Button:Login' => 'Vstup do My-CFAC',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'Prístup do iTopu je obmedzený. Kontaktujte prosím iTop administrátora.',
 	'UI:Login:Error:AccessAdmin' => 'Prístup je vyhradený len pre ľudí, ktorí majú oprávnenia od administrátora. Kontaktujte prosím iTop administrátora.',
@@ -5046,8 +5046,8 @@ or ask your iTop administrator if the iTop server disk is full.',
 	'Class:Incident/Attribute:resolution_code+' => '',
 	'Class:Incident/Attribute:resolution_code/Value:a valider' => 'To Validate',
 	'Class:Incident/Attribute:resolution_code/Value:a valider+' => 'To Validate',
-	'Class:Incident/Attribute:resolution_code/Value:en attente' => 'On Hold',
-	'Class:Incident/Attribute:resolution_code/Value:en attente+' => 'On Hold',
+	'Class:Incident/Attribute:resolution_code/Value:en veille' => 'Standby',
+	'Class:Incident/Attribute:resolution_code/Value:en veille+' => 'Standby',
 	'Class:Incident/Attribute:resolution_code/Value:a refaire' => 'To Redo',
 	'Class:Incident/Attribute:resolution_code/Value:a refaire+' => 'To Redo',
 	'Class:Incident/Attribute:resolution_code/Value:a cloturer' => 'To Close',

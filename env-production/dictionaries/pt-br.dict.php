@@ -1182,7 +1182,7 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:SelectOne' => '-- selecione um --',
 	// ^ START HERE Customization for ICFAC name on itop page
 	// 'UI:Login:Welcome' => 'Bem-vindo ao iTop!',
-	'UI:Login:Welcome' => 'Bem-vindo ao i-CFAC!',
+	'UI:Login:Welcome' => 'Bem-vindo ao My-CFAC!',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:IncorrectLoginPassword' => 'Usuário/senha incorreto, tente novamente.',
 	'UI:Login:IdentifyYourself' => 'Identifique-se antes continuar',
@@ -1218,7 +1218,7 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:LogOffMenu' => 'Sair',
 	// ^ START HERE Customization for ICFAC name on itop page
 	// 'UI:LogOff:ThankYou' => 'Obrigado por usar o sistema',
-	'UI:LogOff:ThankYou' => 'Obrigado por usar i-CFAC',
+	'UI:LogOff:ThankYou' => 'Obrigado por usar My-CFAC',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Clique aqui para entrar novamente...',
 	'UI:ChangePwdMenu' => 'Alterar senha...',
@@ -1229,7 +1229,7 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:Login:RetypePwdDoesNotMatch' => 'Nova senha e Repetir nova senha são diferentes. Tente novamente!',
 	// ^ START HERE Customization for ICFAC name on itop page
 	// 'UI:Button:Login' => 'Entrar iTop',
-	'UI:Button:Login' => 'Entrar i-CFAC',
+	'UI:Button:Login' => 'Entrar My-CFAC',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'Acesso restrito. Por favor, contacte o administrador.',
 	'UI:Login:Error:AccessAdmin' => 'Acesso restrito somente para privilégios administrativo. Por favor, contacte o administrador.',
@@ -4406,8 +4406,8 @@ ou entre em contato com o seu administrador do iTOP pois o servidor pode estar s
 	'Class:Incident/Attribute:resolution_code+' => '',
 	'Class:Incident/Attribute:resolution_code/Value:a valider' => 'To Validate',
 	'Class:Incident/Attribute:resolution_code/Value:a valider+' => 'To Validate',
-	'Class:Incident/Attribute:resolution_code/Value:en attente' => 'On Hold',
-	'Class:Incident/Attribute:resolution_code/Value:en attente+' => 'On Hold',
+	'Class:Incident/Attribute:resolution_code/Value:en veille' => 'Standby',
+	'Class:Incident/Attribute:resolution_code/Value:en veille+' => 'Standby',
 	'Class:Incident/Attribute:resolution_code/Value:a refaire' => 'To Redo',
 	'Class:Incident/Attribute:resolution_code/Value:a refaire+' => 'To Redo',
 	'Class:Incident/Attribute:resolution_code/Value:a cloturer' => 'To Close',

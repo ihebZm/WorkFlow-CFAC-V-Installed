@@ -1181,7 +1181,7 @@ Esperamos distrute de esta versión tanto como nosotros la imaginamos y creamos.
 	'UI:SelectOne' => '-- Seleccione uno --',
 	// ^ START HERE Customization for ICFAC name on itop page 
 	// 'UI:Login:Welcome' => 'Bienvenido a iTop',
-	'UI:Login:Welcome' => 'Bienvenido a i-CFAC',
+	'UI:Login:Welcome' => 'Bienvenido a My-CFAC',
 	// ^ END HERE Customization for ICFAC name on itop page 
 	'UI:Login:IncorrectLoginPassword' => 'Usuario/Contraseña incorrecto, por favor intente otra vez.',
 	'UI:Login:IdentifyYourself' => 'Identifiquese antes de continuar',
@@ -1217,7 +1217,7 @@ Esperamos distrute de esta versión tanto como nosotros la imaginamos y creamos.
 	'UI:LogOffMenu' => 'Cerrar Sesión',
 	// ^ START HERE Customization for ICFAC name on itop page
 	//'UI:LogOff:ThankYou' => 'Gracias por usar iTop',
-	'UI:LogOff:ThankYou' => 'Gracias por usar i-CFAC',
+	'UI:LogOff:ThankYou' => 'Gracias por usar My-CFAC',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Click aquí para conectarse nuevamente',
 	'UI:ChangePwdMenu' => 'Cambiar Contraseña',
@@ -1228,7 +1228,7 @@ Esperamos distrute de esta versión tanto como nosotros la imaginamos y creamos.
 	'UI:Login:RetypePwdDoesNotMatch' => '¡La Nueva Contraseña y su Confirmación No Coinciden!',
 	// ^ START HERE Customization for ICFAC name on itop page
 	// 'UI:Button:Login' => 'Entrar',
-	'UI:Button:Login' => 'Entrar i-CFAC',
+	'UI:Button:Login' => 'Entrar My-CFAC',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'El acceso a iTop está restringido. Por favor contacte al Administrador de iTop.',
 	'UI:Login:Error:AccessAdmin' => 'Acceso restringido a usuarios con privilegio de administrador. Por favor contacte al Administrador de iTop.',
@@ -4409,8 +4409,8 @@ o pregunte al administador de iTop si el servidor que ha quedado sin espacio en 
 	'Class:Incident/Attribute:resolution_code+' => 'resolution code',
 	'Class:Incident/Attribute:resolution_code/Value:a valider' => 'To Validate',
 	'Class:Incident/Attribute:resolution_code/Value:a valider+' => 'To Validate',
-	'Class:Incident/Attribute:resolution_code/Value:en attente' => 'On Hold',
-	'Class:Incident/Attribute:resolution_code/Value:en attente+' => 'On Hold',
+	'Class:Incident/Attribute:resolution_code/Value:en veille' => 'Standby',
+	'Class:Incident/Attribute:resolution_code/Value:en veille+' => 'Standby',
 	'Class:Incident/Attribute:resolution_code/Value:a refaire' => 'To Redo',
 	'Class:Incident/Attribute:resolution_code/Value:a refaire+' => 'To Redo',
 	'Class:Incident/Attribute:resolution_code/Value:a cloturer' => 'To Close',
@@ -4842,8 +4842,8 @@ o pregunte al administador de iTop si el servidor que ha quedado sin espacio en 
 	'Class:UserRequest/Attribute:resolution_code+' => 'resolution code',
 	'Class:UserRequest/Attribute:resolution_code/Value:a valider' => 'To Validate',
 	'Class:UserRequest/Attribute:resolution_code/Value:a valider+' => 'To Validate',
-	'Class:UserRequest/Attribute:resolution_code/Value:en attente' => 'On Hold',
-	'Class:UserRequest/Attribute:resolution_code/Value:en attente+' => 'On Hold',
+	'Class:UserRequest/Attribute:resolution_code/Value:en veille' => 'Standby',
+	'Class:UserRequest/Attribute:resolution_code/Value:en veille+' => 'Standby',
 	'Class:UserRequest/Attribute:resolution_code/Value:a refaire' => 'To Redo',
 	'Class:UserRequest/Attribute:resolution_code/Value:a refaire+' => 'To Redo',
 	'Class:UserRequest/Attribute:resolution_code/Value:a cloturer' => 'To Close',

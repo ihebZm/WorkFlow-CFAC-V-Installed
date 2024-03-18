@@ -1181,7 +1181,7 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:SelectOne' => 'bitte wählen',
 	// ^ START HERE Customization for ICFAC name on itop page 
 	// 'UI:Login:Welcome' => 'Willkommen bei iTop!',
-	'UI:Login:Welcome' => 'Willkommen bei i-CFAC!',
+	'UI:Login:Welcome' => 'Willkommen bei My-CFAC!',
 	// ^ END HERE Customization for ICFAC name on itop page 
 	'UI:Login:IncorrectLoginPassword' => 'Ungültiges Passwort oder Login-Daten. Bitte versuchen Sie es erneut.',
 	'UI:Login:IdentifyYourself' => 'Bitte identifizieren Sie sich, bevor Sie fortfahren.',
@@ -1217,7 +1217,7 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:LogOffMenu' => 'Abmelden',
 	// ^ START HERE Customization for ICFAC name on itop page
 	// 'UI:LogOff:ThankYou' => 'Vielen Dank dafür, dass Sie iTop benutzen!',
-	'UI:LogOff:ThankYou' => 'Vielen Dank dafür, dass Sie i-CFAC benutzen!',
+	'UI:LogOff:ThankYou' => 'Vielen Dank dafür, dass Sie My-CFAC benutzen!',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Klicken Sie hier, um sich wieder anzumelden...',
 	'UI:ChangePwdMenu' => 'Passwort ändern...',
@@ -1228,7 +1228,7 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:Login:RetypePwdDoesNotMatch' => 'Neues Passwort und das wiederholte Passwort stimmen nicht überein!',
 	// ^ START HERE Customization for ICFAC name on itop page
 	// 'UI:Button:Login' => 'in iTop anmelden',
-	'UI:Button:Login' => 'in i-CFAC anmelden',
+	'UI:Button:Login' => 'in My-CFAC anmelden',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'Der iTop-Zugang ist gesperrt. Bitte kontaktieren Sie Ihren iTop-Administrator.',
 	'UI:Login:Error:AccessAdmin' => 'Zugang nur für Personen mit Administratorrechten. Bitte kontaktieren Sie Ihren iTop-Administrator.',
@@ -4403,8 +4403,8 @@ oder melden Sie dem iTop Administrator diesen Fehler, weil eventuell kein ausrei
 	'Class:Incident/Attribute:resolution_code+' => '',
 	'Class:Incident/Attribute:resolution_code/Value:a valider' => 'To Validate',
 	'Class:Incident/Attribute:resolution_code/Value:a valider+' => '',
-	'Class:Incident/Attribute:resolution_code/Value:en attente' => 'On Hold',
-	'Class:Incident/Attribute:resolution_code/Value:en attente+' => '',
+	'Class:Incident/Attribute:resolution_code/Value:en veille' => 'Standby',
+	'Class:Incident/Attribute:resolution_code/Value:en veille+' => '',
 	'Class:Incident/Attribute:resolution_code/Value:a refaire' => 'To Redo',
 	'Class:Incident/Attribute:resolution_code/Value:a refaire+' => '',
 	'Class:Incident/Attribute:resolution_code/Value:a cloturer' => 'To Close',
@@ -4836,8 +4836,8 @@ oder melden Sie dem iTop Administrator diesen Fehler, weil eventuell kein ausrei
 	'Class:UserRequest/Attribute:resolution_code+' => '',
 	'Class:UserRequest/Attribute:resolution_code/Value:a valider' => 'To Validate',
 	'Class:UserRequest/Attribute:resolution_code/Value:a valider+' => '',
-	'Class:UserRequest/Attribute:resolution_code/Value:en attente' => 'On Hold',
-	'Class:UserRequest/Attribute:resolution_code/Value:en attente+' => '',
+	'Class:UserRequest/Attribute:resolution_code/Value:en veille' => 'Standby',
+	'Class:UserRequest/Attribute:resolution_code/Value:en veille+' => '',
 	'Class:UserRequest/Attribute:resolution_code/Value:a refaire' => 'To Redo',
 	'Class:UserRequest/Attribute:resolution_code/Value:a refaire+' => '',
 	'Class:UserRequest/Attribute:resolution_code/Value:a cloturer' => 'To Close',

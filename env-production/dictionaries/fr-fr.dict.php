@@ -997,10 +997,10 @@ Opérateurs :<br/>
 	'BooleanLabel:no' => 'non',
 	'UI:Login:Title' => 'iTop login',
 	'Menu:WelcomeMenu' => 'Bienvenue',
-	'Menu:WelcomeMenu+' => 'Bienvenue dans iTop',
+	'Menu:WelcomeMenu+' => 'Bienvenue sur iTop',
 	'Menu:WelcomeMenuPage' => 'Bienvenue',
-	'Menu:WelcomeMenuPage+' => 'Bienvenue dans iTop',
-	'UI:WelcomeMenu:Title' => 'Bienvenue dans iTop',
+	'Menu:WelcomeMenuPage+' => 'Bienvenue sur iTop',
+	'UI:WelcomeMenu:Title' => 'Bienvenue sur iTop',
 	'UI:WelcomeMenu:LeftBlock' => '<p>iTop est un portail opérationnel complet et libre pour gérer votre SI.</p>
 <ul>il contient:
 <li>Une base de gestion des configurations (CMDB - Configuration management database) pour documenter et gérer votre parc informatique.</li>
@@ -1187,7 +1187,7 @@ Nous espérons que vous aimerez cette version autant que nous avons eu du plaisi
 	'UI:SelectOne' => '-- choisir une valeur --',
 	// ^ START HERE Customization for ICFAC name on itop page
 	// 'UI:Login:Welcome' => 'Bienvenue dans iTop!',
-	'UI:Login:Welcome' => 'Bienvenue dans i-CFAC!',
+	'UI:Login:Welcome' => 'Bienvenue sur My-CFAC!',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:IncorrectLoginPassword' => 'Mot de passe ou identifiant incorrect.',
 	'UI:Login:IdentifyYourself' => 'Merci de vous identifier',
@@ -1223,7 +1223,7 @@ Nous espérons que vous aimerez cette version autant que nous avons eu du plaisi
 	'UI:LogOffMenu' => 'Déconnexion',
 	// ^ START HERE Customization for ICFAC name on itop page
 	//'UI:LogOff:ThankYou' => 'Merci d\'avoir utilisé iTop',
-	'UI:LogOff:ThankYou' => 'Merci d\'avoir utilisé i-CFAC',
+	'UI:LogOff:ThankYou' => 'Merci d\'avoir utilisé My-CFAC',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:LogOff:ClickHereToLoginAgain' => 'Cliquez ici pour vous reconnecter...',
 	'UI:ChangePwdMenu' => 'Changer de mot de passe...',
@@ -1234,7 +1234,7 @@ Nous espérons que vous aimerez cette version autant que nous avons eu du plaisi
 	'UI:Login:RetypePwdDoesNotMatch' => 'Les deux saisies du nouveau mot de passe ne sont pas identiques !',
 	// ^ START HERE Customization for ICFAC name on itop page
 	// 'UI:Button:Login' => 'Entrer dans iTop',
-	'UI:Button:Login' => 'Entrer dans i-CFAC',
+	'UI:Button:Login' => 'Entrer dans My-CFAC',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted' => 'L\'accès à cette page iTop est soumis à autorisation. Merci de contacter votre administrateur iTop.',
 	'UI:Login:Error:AccessAdmin' => 'Accès restreint aux utilisateurs possédant le profil Administrateur.',
@@ -1497,7 +1497,7 @@ Nous espérons que vous aimerez cette version autant que nous avons eu du plaisi
 	'UI:Delete:PleaseDoTheManualOperations' => 'Vous devez effectuer les opération manuelles listées ci-dessus avant de pourvoir supprimer cet objet.',
 	'UI:Delect:Confirm_Object' => 'Confirmez que vous voulez bien supprimer %1$s.',
 	'UI:Delect:Confirm_Count_ObjectsOf_Class' => 'Confirmez que vous voulez bien supprimer les %1$d objets de type %2$s ci-dessous.',
-	'UI:WelcomeToITop' => 'Bienvenue dans iTop',
+	'UI:WelcomeToITop' => 'Bienvenue sur iTop',
 	'UI:DetailsPageTitle' => 'iTop - %2$s - Détails de %1$s',
 	'UI:ErrorPageTitle' => 'iTop - Erreur',
 	'UI:ObjectDoesNotExist' => 'Désolé cet objet n\'existe pas (ou vous n\'êtes pas autorisé à l\'afficher).',
@@ -4407,8 +4407,8 @@ Soit demandez à votre administrateur système s\'il reste de la place disque di
 	'Class:Incident/Attribute:resolution_code+' => '',
 	'Class:Incident/Attribute:resolution_code/Value:a valider' => 'A Valider',
 	'Class:Incident/Attribute:resolution_code/Value:a valider+' => 'A Valider',
-	'Class:Incident/Attribute:resolution_code/Value:en attente' => 'En Attente',
-	'Class:Incident/Attribute:resolution_code/Value:en attente+' => 'En Attente',
+	'Class:Incident/Attribute:resolution_code/Value:en veille' => 'En Veille',
+	'Class:Incident/Attribute:resolution_code/Value:en veille+' => 'En Veille',
 	'Class:Incident/Attribute:resolution_code/Value:a refaire' => 'A Refaire',
 	'Class:Incident/Attribute:resolution_code/Value:a refaire+' => 'A Refaire',
 	'Class:Incident/Attribute:resolution_code/Value:a cloturer' => 'A Cloturer',
@@ -4881,8 +4881,8 @@ Soit demandez à votre administrateur système s\'il reste de la place disque di
 	'Class:UserRequest/Attribute:resolution_code+' => '',
 	'Class:UserRequest/Attribute:resolution_code/Value:a valider' => 'A Valider',
 	'Class:UserRequest/Attribute:resolution_code/Value:a valider+' => 'A Valider',
-	'Class:UserRequest/Attribute:resolution_code/Value:en attente' => 'En Attente',
-	'Class:UserRequest/Attribute:resolution_code/Value:en attente+' => 'En Attente',
+	'Class:UserRequest/Attribute:resolution_code/Value:en veille' => 'En Veille',
+	'Class:UserRequest/Attribute:resolution_code/Value:en veille+' => 'En Veille',
 	'Class:UserRequest/Attribute:resolution_code/Value:a refaire' => 'A Refaire',
 	'Class:UserRequest/Attribute:resolution_code/Value:a refaire+' => 'A Refaire',
 	'Class:UserRequest/Attribute:resolution_code/Value:a cloturer' => 'A Cloturer',

@@ -577,7 +577,7 @@ We hope you’ll enjoy this version as much as we enjoyed imagining and creating
 	'UI:Login:RetypePwdDoesNotMatch'               => 'Nová hesla se neshodují!',
 	// ^ START HERE Customization for ICFAC name on itop page
 	// 'UI:Button:Login'                              => 'Přihlásit',
-	'UI:Button:Login'                              => 'Přihlásit i-CFAC',
+	'UI:Button:Login'                              => 'Přihlásit My-CFAC',
 	// ^ END HERE Customization for ICFAC name on itop page
 	'UI:Login:Error:AccessRestricted'              => 'Přístup je omezen. Kontaktujte administrátora.',
 	'UI:Login:Error:AccessAdmin'                   => 'Přístup vyhrazen osobám s administrátorskými právy. Kontaktujte administrátora.',
